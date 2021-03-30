@@ -30,3 +30,18 @@ a{
   display: block;
   margin: 50px;
 }
+  .block {
+    width: 200px;
+    height: 250px;
+    margin: 50px;
+    padding: 50px;
+    border: 10px solid tomato;
+    overflow: hidden; // scroll
+    // box-sizing: border-box;
+  }
+  .centr {
+    width: 50%;
+    height: 30px;
+    border: 3px solid firebrick;
+    margin: 0 auto;
+  }
