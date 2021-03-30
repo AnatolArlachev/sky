@@ -1,6 +1,16 @@
 body * {
   outline: 1px solid lightgrey;
 }
-.link {
+a{
   color: black;
+}
+h2 {
+  font-size: 180%;
+}
+ol, ul {
+  font-size: 120%;
+}
+img {
+  width: 200px;
+  height: 200px;
 }
