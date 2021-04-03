@@ -1,33 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.scss">
-    <title>First project</title>
-    <script src="./js/main.js" defer></script>
-  </head>
-   <body>
-<header class="container">
 
-Header
-  
-</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.scss">
+  <title>First project</title>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="container">
+
+    Header
+
+  </header>
   <div class="banner">
     <div class="container">
       Banner
     </div>
-    
   </div>
   <main class="container">
-Main
+    Main
+    <div class="four-columns">
+      <div class="four__columns__item">
+        @@include('./partials/article/_article.html',
+       {"articleText": "QWERTY"})
+      </div>
+    </div>
+  
   </main>
-  <footer class="container">
-Foooter
+  <footer>
+    <div class="container">
+      Foooter
+    </div>
+
   </footer>
-  </body>
+</body>
+
 </html>
-
-
-
-

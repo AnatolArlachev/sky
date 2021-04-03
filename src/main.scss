@@ -1,14 +1,23 @@
+@import "./partials/article/article.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
 .container {
   max-width: 1200px;
-  height: 100px;
   margin: 0 auto;
+  padding: 50px 0;
 }
 footer {
-  background-color: #fb9c06
-
-  ;
+  background-color: #fb9c06;
   
+}
+.four__columns__item{
+  width: 25%;
+  
+ 
+}
+.four-columns{
+  display: flex;
+ 
 }
