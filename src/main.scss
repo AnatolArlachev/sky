@@ -1,3 +1,27 @@
-body * {
-  outline: 1px solid lightgrey;
+
+.container{
+ border: 3px solid red;
+margin: 15px;
+ 
 }
+.container.main-nav ul li{
+  display:inline-block;
+  
+}
+.container.sub-menu{
+  border: 3px dashed green;
+}
+
+.container.blocks p{
+color: green;
+}
+.container.inline{
+  border: 3px double green;
+}
+.container.inline p{
+  color: blue;
+  display: inline-block;
+}
+
+
+
