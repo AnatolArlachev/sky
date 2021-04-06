@@ -1,4 +1,5 @@
 @import "./partials/article/article.scss";
+@import"./partials/team-card/team-card.scss";
 
 body * {
   outline: 1px solid lightgrey;
@@ -20,4 +21,24 @@ footer {
 .four-columns{
   display: flex;
  
+}
+.header{
+text-align: center;
+color: #fb9c06;
+text-decoration: underline;
+padding: 40px 0 15px 0;
+font-size: 26px;
+
+}
+.header.dots:after{
+content:"..."
+}
+.three-columns{
+  display: flex;
+  flex-wrap: wrap;
+}
+.three-coumns__item{
+  width: 33.3%;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
