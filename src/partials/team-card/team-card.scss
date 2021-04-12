@@ -11,10 +11,16 @@
     &__img{
         border-radius: 50%;
         overflow: hidden;
-        border: 2px solid orange;
+        
         img{
         max-width: 100%;
         max-height: 100%;
+   
     }
+    }
+    &__text{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
     }
 }

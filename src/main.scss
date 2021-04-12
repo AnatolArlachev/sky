@@ -36,9 +36,11 @@ content:"..."
 .three-columns{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
-.three-coumns__item{
+.three-columns__item{
   width: 33.3%;
   padding: 0 50px;
   box-sizing: border-box;
+  
 }
