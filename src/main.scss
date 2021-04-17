@@ -5,8 +5,32 @@ body * {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
+
   
 }
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  display: flex;
+  align-items: center;
+}
+ .title-image{
+   margin-right:20px ;
+   height: 40px;
+   width: 40px;
+   background-image: url('/img/orangeRabbit.jpg');
+   background-size: cover;
+  }
+  .top-name-title{
+    color:  rgb(253, 171, 18);
+    text-align: center;
+  }
+  .bottom-name-title{
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 .four-columns{
   display: flex;
 }
@@ -22,19 +46,6 @@ body * {
 .footer{
   background-color: rgb(253, 171, 18);
 }
-.title{
-  display: flex;
-  // justify-content: space-between;
- .title-image{
- 
-    background-image:url(/img/orangeRabbit.jpg) ;
-    background-color: #cccccc;
-    
 
-  }
-}
 
-.top{
-  display: flex;
-  justify-content: space-between;
-}
+
