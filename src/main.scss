@@ -2,8 +2,37 @@ body * {
   outline: 1px solid lightgrey;
 }
 .container{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px 0;
   
+}
+.four-columns{
+  display: flex;
+}
+.four-columns__item{
+  width: 25%;
+}
+.three-columns{
+  display: flex;
+}
+.three-columns__item{
+  width: 33%;
+}
+.footer{
+  background-color: rgb(253, 171, 18);
+}
+.title{
+  display: flex;
+  // justify-content: space-between;
+  &__image{
+    background-image: ;
+    background-size: contain;
+
+  }
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
 }
