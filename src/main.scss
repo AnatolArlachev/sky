@@ -45,6 +45,7 @@ body * {
   background-color: yellow;
   top:0;
   left: 0;
+  z-index: 10;
   // transition: .5s ease; свойство позволяющие плавно перемещать кнпоку по нужным нам напрвлениям
 }
 
@@ -104,4 +105,31 @@ left: calc(100% - 20px);
 }
  .tooltip:hover:after{
    content: attr(data-tip); // если мы хотим при наведении на конетнет изобразилась показалась ссылочка
+ }
+
+.relative, .absolute, .fixed{
+  color: white;
+}
+ .fixed{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .sticky{
+   background-color: tomato;
+   position: sticky;
+   bottom: 100px;
+  top: 100px;
+   width: 150px;
+   height: 150px;
+   z-index: 2;
+
+ }
+ .sticky-header{
+   position: sticky;
+   top: 0;
+   background-color: lightgrey;
+   z-index: 1;
  }
