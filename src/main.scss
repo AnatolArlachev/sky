@@ -25,9 +25,11 @@ body * {
 .title{
   display: flex;
   // justify-content: space-between;
-  &__image{
-    background-image: ;
-    background-size: contain;
+ .title-image{
+ 
+    background-image:url("/src/img/orangeRabbit.jpg") ;
+    background-size: cover;
+    
 
   }
 }
