@@ -26,10 +26,35 @@ body * {
   .top-name-title{
     color:  rgb(253, 171, 18);
     text-align: center;
+    font-weight: bold;
   }
   .bottom-name-title{
     font-weight: bold;
     text-transform: uppercase;
+  }
+  .icons{
+    display: flex;
+    // justify-content: space-around;
+  }
+  .icons-element{
+  width: 100px;
+  height: 100px;
+  padding: 0 10px;
+
+  }
+  .icons-element-field{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+ 
+  .icons-image{
+  
+  }
+  .icons-name{
+    
   }
 .four-columns{
   display: flex;
