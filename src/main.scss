@@ -1,3 +1,5 @@
+@import"./partials/icons/icons.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
@@ -36,26 +38,7 @@ body * {
     display: flex;
     // flex-wrap: wrap;
   }
-  .icons-element{
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-
-  }
-  .icons-element-field{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
   
- 
-  .icons-image{
-  
-  }
-  .icons-name{
-    
-  }
 .four-columns{
   display: flex;
 }
