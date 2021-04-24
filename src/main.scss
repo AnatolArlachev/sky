@@ -9,6 +9,20 @@ body * {
   margin: 0 auto;
   padding: 50px 0;
 }
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.rabbit-logo{
+  display: flex;
+}
+.image-logo{
+  background-image: url('/img/orangeRabbit.png');
+  
+}
+.navigation{
+  
+}
 footer {
   background-color: #fb9c06;
   
