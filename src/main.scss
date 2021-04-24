@@ -1,5 +1,7 @@
 @import "./partials/article/article.scss";
-@import"./partials/team-card/team-card.scss";
+@import "./partials/team-card/team-card.scss";
+@import "./partials/icon/icon.scss";
+
 
 body * {
   outline: 1px solid lightgrey;
@@ -36,9 +38,13 @@ header{
 text-transform: uppercase;
 font-weight: bold;
 }
-.navigation{
+// .navigation{
+ 
+// }
+.menu{
   display: flex;
 }
+
 footer {
   background-color: #fb9c06;
   
