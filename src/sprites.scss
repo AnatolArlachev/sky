@@ -1,22 +1,22 @@
+.sprite{
+    width: 64px; height: 64px;
+    background-image: url('/img/css_sprites.png') ;
+    align-items: center;
 
+}
 
 .home {
-    width: 64px; height: 64px;
-    background: url('/img/css_sprites.png') -178px -10px;
+    background-position:  -178px -10px;
 }
 .contact {
-    width: 64px; height: 64px;
-    background: url('/img/css_sprites.png') -94px -94px;
+    background-position:  -94px -94px;
 }
 .bong {
-    width: 64px; height: 64px;
-    background: url('/img/css_sprites.png') -10px -94px;
+    background-position:  -10px -94px;
 }
 .about {
-    width: 64px; height: 64px;
-    background: url('/img/css_sprites.png') -94px -10px;
+    background-position:  -94px -10px;
 }
 .work {
-    width: 64px; height: 64px;
-    background: url('/img/css_sprites.png') -10px -10px;
+    background-position:  -10px -10px;
 }
