@@ -7,17 +7,14 @@ body * {
 .header, .footer {
   background-color: rgba(35, 85, 60, 0.658);
   height: 100px;
-  
 }
 
 .main{
-  
 min-height: calc(100vh - 200px) ;
-
-
 }
 
 .block{
   background-color: lawngreen;
   height: 900px;
 }
+
