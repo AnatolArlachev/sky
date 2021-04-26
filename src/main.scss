@@ -45,6 +45,12 @@ font-weight: bold;
 .menu{
   display: flex;
 }
+.banner{
+  height: 322px;
+  background-image: url('/img/orange.png');
+  background-color: #b88b8b;
+  background-size: cover;
+}
 
 footer {
   background-color: #fb9c06;

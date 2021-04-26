@@ -2,106 +2,94 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./main.scss">
-  <title>First project</title>
-  <script src="./js/main.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./main.scss">
+	<title>First project</title>
+	<script src="./js/main.js" defer></script>
 </head>
 
 <body>
-  <header class="container">
-    <div class="rabbit-logo">
-      <div class="image-logo">
-      </div>
-      <div class="text-logo">
-        <div class="text-logo-up">
-          orange
-        </div>
-        <div class="text-logo-down">
-          Rabbit
-        </div>
-      </div>
-    </div>
-    <div class="navigation">
+	<header class="container">
+		<div class="rabbit-logo">
+			<div class="image-logo">
+			</div>
+			<div class="text-logo">
+				<div class="text-logo-up">
+					orange
+				</div>
+				<div class="text-logo-down">
+					Rabbit
+				</div>
+			</div>
+		</div>
+		<div class="navigation">
 
-      <div class="menu">
-           @@include('./partials/icon/_icon.html')
-        </div>
-        
-    <!-- <div class="menu-item">
-      @@include('./partials/icon/_icon.html',
-      {"iconText": "work"})
-    </div>
-    <div class="menu-item">
-      @@include('./partials/icon/_icon.html',
-      {"iconText": "blog"})
-    </div>
-    <div class="menu-item">
-      @@include('./partials/icon/_icon.html',
-      {"iconText": "contact"})
-     
-    </div> -->
-    </div>
-    
-    </div>
+			<div class="menu">
+				@@include('./partials/icon/_icon.html')
+			</div>
 
-  </header>
 
-  <div class="banner">
-    <div class="container">
-      Banner
-    </div>
-  </div>
-  <main class="container">
-    Main
-    <div class="four-columns">
-      <div class="four__columns__item">
-        @@include('./partials/article/_article.html',
-        {"articleText": "Lorem ipsum dolor sit amet, consectetur adipisicing "})
-      </div>
-      <div class="four__columns__item">
-        @@include('./partials/article/_article.html',
-        {"articleText": "Lorem ipsum dolor sit"})
-      </div>
+		</div>
 
-      <div class="four__columns__item">
-        @@include('./partials/article/_article.html',
-        {"articleText": "Lorem ipsum "})
-      </div>
-      <div class="four__columns__item">
-        @@include('./partials/article/_article.html',
-        {"articleText": "Lorem "})
-      </div>
-    </div>
-    <div class="section">
-      <div class="header">
-        Meet the team
-      </div>
-      <div class="three-columns">
-        <div class="three-columns__item">
-          @@include('./partials/team-card/_team-card.html')
-        </div>
-        <div class="three-columns__item">
-          @@include('./partials/team-card/_team-card.html')
-        </div>
-        <div class="three-columns__item">
-          @@include('./partials/team-card/_team-card.html')
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="header dots">
-        Send us a message
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-      Foooter
-    </div>
+		</div>
 
-  </footer>
+	</header>
+
+	<div class="banner">
+		<div class="container">
+			Banner
+		</div>
+	</div>
+	<main class="container">
+		Main
+		<div class="four-columns">
+			<div class="four__columns__item">
+				@@include('./partials/article/_article.html',
+				{"articleText": "Lorem ipsum dolor sit amet, consectetur adipisicing "})
+			</div>
+			<div class="four__columns__item">
+				@@include('./partials/article/_article.html',
+				{"articleText": "Lorem ipsum dolor sit"})
+			</div>
+
+			<div class="four__columns__item">
+				@@include('./partials/article/_article.html',
+				{"articleText": "Lorem ipsum "})
+			</div>
+			<div class="four__columns__item">
+				@@include('./partials/article/_article.html',
+				{"articleText": "Lorem "})
+			</div>
+		</div>
+		<div class="section">
+			<div class="header">
+				Meet the team
+			</div>
+			<div class="three-columns">
+				<div class="three-columns__item">
+					@@include('./partials/team-card/_team-card.html')
+				</div>
+				<div class="three-columns__item">
+					@@include('./partials/team-card/_team-card.html')
+				</div>
+				<div class="three-columns__item">
+					@@include('./partials/team-card/_team-card.html')
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="header dots">
+				Send us a message
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			Foooter
+		</div>
+
+	</footer>
 </body>
 
 </html>
