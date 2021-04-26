@@ -12,15 +12,10 @@ body * {
 
 .main{
   
-min-height: 78vh ;
+min-height: calc(100vh - 200px) ;
 
 
 }
-// .footer{
-  
-//   position: relative;
-//   top: 100%;
-// }
 
 .block{
   background-color: lawngreen;
