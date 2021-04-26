@@ -1,10 +1,8 @@
 body * {
   outline: 1px solid lightgrey;
 }
-.container{
-  width: 100%;
-  position: relative;
-}
+
+
 
 .header, .footer {
   background-color: rgba(35, 85, 60, 0.658);
@@ -13,13 +11,16 @@ body * {
 }
 
 .main{
-min-height: 100vh;
+  
+min-height: 78vh ;
+
+
 }
-.footer{
-  width: inherit;
-  position: absolute;
-  top: 100%;
-}
+// .footer{
+  
+//   position: relative;
+//   top: 100%;
+// }
 
 .block{
   background-color: lawngreen;
