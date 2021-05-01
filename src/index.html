@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./main.scss">
-	<title>First project</title>
+	<title>OrangeRabbit</title>
 	<script src="./js/main.js" defer></script>
 </head>
 
@@ -15,32 +15,41 @@
 			<div class="image-logo">
 			</div>
 			<div class="text-logo">
-				<div class="text-logo-up">
-					orange
-				</div>
-				<div class="text-logo-down">
+				<p class="text-logo-up">
+					orangE
+				</p>
+				<p class="text-logo-down">
 					Rabbit
-				</div>
+				</p>
 			</div>
 		</div>
 		<div class="navigation">
 
 			<div class="menu">
-				@@include('./partials/icon/_icon.html')
+				@@include('./partials/icon/_icon.html',
+				{"item": "home"})
+				@@include('./partials/icon/_icon.html',
+				{"item": "contact"})
+				@@include('./partials/icon/_icon.html',
+				{"item": "bong"})
+				@@include('./partials/icon/_icon.html',
+				{"item": "about"})
+				@@include('./partials/icon/_icon.html',
+				{"item": "work"})
 			</div>
-
-
-		</div>
-
-		</div>
-
+			</div>
 	</header>
+
+
 
 	<div class="banner">
 		<div class="container">
-			Banner
+			<p>do you like rabbits?</p>
+			<p>do you like oranges?</p>
 		</div>
 	</div>
+
+	
 	<main class="container">
 		Main
 		<div class="four-columns">
