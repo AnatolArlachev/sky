@@ -13,7 +13,7 @@ body * {
   max-width: 1200px;
   margin: 0 auto;
   padding:50px 0;
-  // position: relative;
+  position: relative;
   
 }
 header{
@@ -69,15 +69,10 @@ header{
   background-size: cover;
   border-bottom: 3px solid #fb9c06;
   border-top: 3px solid #fb9c06;
-  position: relative;
 }
 
-.banner> .container{
- padding: initial;
- position: absolute;
- top: 40%;
- left: 20%;
-}
+
+
 .banner p:first-child{
   color: #fcba50;
   background-color: rgba(71, 75, 75, 0.842);
@@ -85,8 +80,7 @@ header{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2em;
-  // margin-bottom: 0px;
-  // white-space: nowrap;
+  
  }
 .banner p:last-child{
   color:black;
@@ -97,24 +91,15 @@ header{
   font-size: 2em;
 }
 
-
-
-
-
-
-
-footer {
-  background-color: #fb9c06;
-  
-}
-.four__columns__item{
-  width: 25%;
-
-}
 .four-columns{
   display: flex;
- 
 }
+
+.four__columns__item{
+  width: 25%;
+}
+
+
 .header{
 text-align: center;
 color: #fb9c06;
@@ -123,9 +108,7 @@ padding: 40px 0 15px 0;
 font-size: 26px;
 
 }
-.header.dots:after{
-content:"..."
-}
+
 .three-columns{
   display: flex;
   flex-wrap: wrap;
@@ -138,3 +121,7 @@ content:"..."
   
 }
 
+
+footer {
+  background-color: #fb9c06;
+}

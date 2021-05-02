@@ -48,27 +48,24 @@
 			<p>do you like oranges?</p>
 		</div>
 	</div>
-
-	
 	<main class="container">
-		Main
 		<div class="four-columns">
 			<div class="four__columns__item">
 				@@include('./partials/article/_article.html',
-				{"articleText": "Lorem ipsum dolor sit amet, consectetur adipisicing "})
+				{"articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus nobis voluptatum ipsam qui quasi sequi fuga similique iure tempora in illum itaque rem, aliquam magnam reiciendis illo placeat nesciunt?"})
 			</div>
 			<div class="four__columns__item">
 				@@include('./partials/article/_article.html',
-				{"articleText": "Lorem ipsum dolor sit"})
+				{"articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus nobis voluptatum ipsam qui quasi sequi fuga similique iure tempora in illum itaque rem, aliquam magnam reiciendis illo placeat nesciunt?"})
 			</div>
 
 			<div class="four__columns__item">
 				@@include('./partials/article/_article.html',
-				{"articleText": "Lorem ipsum "})
+				{"articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus nobis voluptatum ipsam qui quasi sequi fuga similique iure tempora in illum itaque rem, aliquam magnam reiciendis illo placeat nesciunt?"})
 			</div>
 			<div class="four__columns__item">
 				@@include('./partials/article/_article.html',
-				{"articleText": "Lorem "})
+				{"articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus nobis voluptatum ipsam qui quasi sequi fuga similique iure tempora in illum itaque rem, aliquam magnam reiciendis illo placeat nesciunt?"})
 			</div>
 		</div>
 		<div class="section">
@@ -77,13 +74,22 @@
 			</div>
 			<div class="three-columns">
 				<div class="three-columns__item">
-					@@include('./partials/team-card/_team-card.html')
+					@@include('./partials/team-card/_team-card.html',
+					{"cardContent": "Hoof is our most talanted designer.  However he`s not the talkative type and I would advise not getting on the wrong side of him.",
+				    "titleCard": "Hoof-",
+				    "linkCard": "Lead Designer"})
 				</div>
 				<div class="three-columns__item">
-					@@include('./partials/team-card/_team-card.html')
+					@@include('./partials/team-card/_team-card.html',
+					{"cardContent":"Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she has too.",
+					"titleCard": "Nibs-",
+					"linkCard": "CEO/Director"})
 				</div>
 				<div class="three-columns__item">
-					@@include('./partials/team-card/_team-card.html')
+					@@include('./partials/team-card/_team-card.html',
+					{"cardContent":"Squawk is no social bunny. But when it comes to programming he stands out from the crowd.",
+					"titleCard": "Squawk-",
+					"linkCard": "Developer"})
 				</div>
 			</div>
 		</div>
