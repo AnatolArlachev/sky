@@ -5,10 +5,10 @@
 
 
 
-body * {
-  outline: 1px solid lightgrey;
+// body * {
+//   outline: 1px solid lightgrey;
 
-}
+// }
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -118,10 +118,74 @@ font-size: 26px;
   width: 33.3%;
   padding: 0 50px;
   box-sizing: border-box;
-  
+}
+.section{
+  position: relative;
 }
 
+.header.dots:after{
+  content: "...";
+}
+.input{
+  display: flex;
+  height: 250px;
+}
+.info{
+  justify-content: space-around;
+  margin-right: 20px;
+  color: #fb9c06;
+  text-transform: capitalize;
+  &__name{
+    height: 35px;
+    &:after{
+      content: ":";
+    }
+  }
+}
+
+.field{
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: space-around;
+  &__input{
+    height: 35px;
+    margin: initial;
+    padding: initial;
+    border: 1px solid lightgrey;;
+    width: 100%;
+    // &__message{
+    //   height: 90px;
+    //   margin: initial;
+    //   padding: initial;
+    //   border: 1px solid lightgrey;;
+    //   width: 100%;
+    // }
+  }
+}
+.button{
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  background-color: #fb9c06;
+  color: white;
+  border: initial;
+  width: 140px;
+  height: 44px;
+&:hover{
+  font-size: 2em;
+  transition:1s;
+}
+
+}
 
 footer {
   background-color: #fb9c06;
+  text-align: center;
+  & p{
+    display: inline-block;
+    color:white;
+    font-size: 28px;
+    text-transform: uppercase;
+    
+  }
 }
