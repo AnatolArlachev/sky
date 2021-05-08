@@ -7,16 +7,13 @@
 
 body * {
   outline: 1px solid lightgrey;
-  // margin: 0;
+  // margin: 0px;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  // padding:0 20px;
- 
-  
 }
-header{
+.header-logo{
   max-height: 140px;
   display: flex;
   justify-content: space-between;
@@ -25,46 +22,37 @@ header{
 .rabbit-logo{
   display: flex;
   align-items: center;
-  
-
 }
 .image-logo{
-  width: 100px;
-  height: 100px;
+  width: 106px;
+  height: 88px;
   margin-left: 20px;
   background-image: url('/img/orangeRabbit.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 .text-logo{
-  padding-left:30px;
+  padding-left:10px;
   &-up{
+    margin: initial;
     font-weight: bold;
     color: #fb9c06;
     text-align: center;
     text-transform: lowercase;
-    font-size: 1.5em;
+    font-size: 19px;
+    padding-bottom: 10px; 
   }
   &-down{
+    margin: initial;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2em; 
-    margin-top: 20px;
+    font-size: 34px;
   }
 }
-
-
-// .navigation{
-//   display: flex;
-//  justify-content:space-around;
-// }
 .menu{
   display: flex;
 }
-
-
-
 .banner{
   height: 403px;
   background-image: url('/img/orangeMZFrabbit.png');
@@ -78,8 +66,6 @@ header{
   justify-content: center;
   height: 100%;
 }
-
-
 .banner .container p{
   max-width: 400px;
   margin-left:30px ;
@@ -100,15 +86,12 @@ header{
   font-weight: bold;
   font-size: 2em;
 }
-
 .four-columns{
   display: flex;
 }
-
 .four__columns__item{
   width: 25%;
 }
-
 
 .header{
 text-align: center;
@@ -116,9 +99,10 @@ color: #fb9c06;
 text-decoration: underline;
 padding: 40px 0 15px 0;
 font-size: 26px;
-
 }
-
+.header.dots:after{
+  content: "...";
+}
 .three-columns{
   display: flex;
   flex-wrap: wrap;
@@ -132,64 +116,46 @@ font-size: 26px;
 .section{
   padding-bottom: 10px;
 }
-
-.header.dots:after{
-  content: "...";
+.form-wrap{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.input{
-  // display: flex;
-  max-height: 250px;
-  
+.field{
+  display: flex;
 }
-.info{
+.field__name{
+  height: 35px;
   margin-right: 20px;
   color: #fb9c06;
   text-transform: capitalize;
-  &__name{
-    height: 35px;
-    &:after{
-      content: ":";
-    }
-  }
+  &:after{
+      content: ":"
+   }
 }
-
-.field{
+.field__input{
   width: 100%;
-  &__input{
-    
-    height: 35px;
-    margin: initial;
-    padding: initial;
-    border: 1px solid lightgrey;
-    border-left: 3px solid lightgrey;
-    width: 100%;
-    // &__message{
-    //   height: 90px;
-    //   margin: initial;
-    //   padding: initial;
-    //   border: 1px solid lightgrey;;
-    //   width: 100%;
-    // }
-  }
+  height: 35px;
+  margin: initial;
+  padding: initial;
+  border: none;
+  background-color:rgba(252, 247, 247, 0.493) ;
+  border-left: 3px solid rgba(252, 247, 247, 0.493);
+  width: 100%;
 }
-.button{
-  float: right;
-  margin: 20px;
-  background-color: #fb9c06;
-  color: white;
+button {
+  padding: 10px 0;
   border: initial;
   border-bottom:3px solid #cc830f;
+  display: block;
   width: 140px;
-  height: 44px;
-  font-size: 28px;
-&:hover{
-
-  font-size: 2em;
-  transition:1s;
+  margin: 10px 80%;
+  background-color: #fb9c06;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
 }
-
-}
-
 .footer {
   height: 70px;
   background-color: #fb9c06;

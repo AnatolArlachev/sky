@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<header class="container">
+	<header class="container header-logo">
 		<div class="rabbit-logo">
 			<div class="image-logo">
 			</div>
@@ -19,7 +19,7 @@
 					orangE
 				</p>
 				<p class="text-logo-down">
-					Rabbit
+					rabbit
 				</p>
 			</div>
 		</div>
@@ -100,21 +100,21 @@
 			<div class="header dots">
 				Send us a message
 			</div>
-			<div class="input">
-				<div class="info">
-					<div class="info__name">name</div>
-					<div class="info__name">email</div>
-					<div class="info__name">message</div>
-				</div>
-				<div class="field">
-					<input type="text" class="field__input">
-					<input type="text" class="field__input">
-					<textarea name="asd" id="" cols="30" rows="10" class="field__input"></textarea>
-					<button class="button">submit</button>
-				</div>
-				
-			</div>
-			
+		<form class="form-wrap">
+					<div class="field">
+						<label for="name" class="field__name">*Name</label>
+						<input type="text" id="name"  class="field__input" required>
+					</div>
+					<div class="field">
+						<label for="email" class="field__name">*Email</label>
+						<input type="email" id="email"class="field__input" required>
+					</div>
+					<div class="field">
+						<label for="message" class="field__name">Message</label>
+						<textarea name="text" id="message" cols="30" rows="10"class="field__input"></textarea>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
 		</div>
 	</main>
 	<footer class="footer">
