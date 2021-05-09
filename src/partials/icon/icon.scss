@@ -1,5 +1,8 @@
 
+  
 .menu-item{
+  position: relative;
+  cursor: pointer;
   display: inline-block;
   padding: 0 15px;
   text-decoration: none;
@@ -8,12 +11,29 @@
      text-align: center;
      color: rgba(128, 128, 128, 0.938);
   }
-
-  &:hover{
-    position: relative;
-    top: 3px;
-    left: 3px;
-    background-color: #fb9c06;
-    transition:3s;
+  &__hidden{
+    position: absolute;
+    top:100%;
+    padding-left: 80%;
+    // display: none;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+   
+  }
+  &:hover > .menu-item__hidden{
+    display: block;
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
   }
 }
+.sub-menu{
+  &__item{
+    white-space: nowrap;
+  }
+}
+
+

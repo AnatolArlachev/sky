@@ -27,15 +27,30 @@
 
 			<div class="menu">
 				@@include('./partials/icon/_icon.html',
-				{"item": "home"})
+				{"item": "home",
+			     "stringOne":"main",
+				 "stringTwo":"bad",
+				 "stringThree":"beautiful"})
 				@@include('./partials/icon/_icon.html',
-				{"item": "contact"})
+				{"item": "contact",
+				"stringOne":"managers",
+				"stringTwo":"baba yaga",
+				"stringThree":"Ric Morty"})
 				@@include('./partials/icon/_icon.html',
-				{"item": "bong"})
+				{"item": "bong",
+				"stringOne":"one",
+				"stringTwo":"fault",
+				"stringThree":"bereza"})
 				@@include('./partials/icon/_icon.html',
-				{"item": "about"})
+				{"item": "about",
+				"stringOne":"man",
+				"stringTwo":"asdasdfafadf",
+				"stringThree":"look"})
 				@@include('./partials/icon/_icon.html',
-				{"item": "work"})
+				{"item": "work",
+				"stringOne":"kartoshka",
+				"stringTwo":"bulba",
+				"stringThree":"tapuah adama"})
 			</div>
 			</div>
 	</header>
@@ -103,11 +118,11 @@
 		<form class="form-wrap">
 					<div class="field">
 						<label for="name" class="field__name">*Name</label>
-						<input type="text" id="name"  class="field__input" required>
+						<input type="text" id="name"  class="field__input" required placeholder="enter your name">
 					</div>
 					<div class="field">
 						<label for="email" class="field__name">*Email</label>
-						<input type="email" id="email"class="field__input" required>
+						<input type="email" id="email"class="field__input" required placeholder="enter your email">
 					</div>
 					<div class="field">
 						<label for="message" class="field__name">Message</label>
