@@ -5,10 +5,10 @@
 
 
 
-body * {
-  outline: 1px solid lightgrey;
+body  {
+  // outline: 1px solid lightgrey;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  // margin: 0px;
+  margin: 0px;
 }
 .container {
   max-width: 1200px;
@@ -68,7 +68,7 @@ body * {
   height: 100%;
 }
 .banner .container p{
-  max-width: 400px;
+  max-width: 420px;
   margin-left:30px ;
   &:first-child{
    color: #fcba50;
@@ -117,35 +117,37 @@ font-size: 26px;
 .section{
   padding-bottom: 10px;
 }
-.form-wrap{
-  height: 250px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+// .form-wrap{
+ 
+// }
 .field{
-  display: flex;
-}
-.field__name{
-  height: 35px;
-  margin-right: 20px;
+  display:grid;
+  grid-template-columns: 8% 90%;
+  gap: 2%;
+  
+&__name{
   color: #fb9c06;
   text-transform: capitalize;
   &:after{
       content: ":"
    }
 }
-.field__input{
-  list-style: none;
-  width: 100%;
+&__input{
   height: 35px;
-  margin: initial;
-  padding: initial;
   border: none;
-  background-color:rgba(252, 247, 247, 0.493) ;
-  border-left: 3px solid rgba(252, 247, 247, 0.493);
-  width: 100%;
-  opacity: 30%;
+  background-color:#f8f7f6;
+  border-top: 2px solid lightgrey;
+  border-left: 3px solid lightgrey;
+  &:hover{
+    color: #cc830f;
+    opacity: initial;
+  }
+    &--textarea{
+      height: 100px;
+    }
+ 
+  
+}
 }
 button {
   cursor: pointer;
