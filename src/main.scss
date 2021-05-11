@@ -5,10 +5,10 @@
 
 
 
-body  {
-  // outline: 1px solid lightgrey;
+body * {
+  outline: 1px solid lightgrey;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin: 0px;
+  // margin: 0px;
 }
 .container {
   max-width: 1200px;
@@ -34,25 +34,32 @@ body  {
 }
 .text-logo{
   padding-left:10px;
-  &-up{
-    margin: initial;
+  justify-content: space-between;
+  &__up{
     font-weight: bold;
     color: #fb9c06;
     text-align: center;
     text-transform: lowercase;
     font-size: 19px;
-    padding-bottom: 10px; 
+    &--uppercaseText{
+      font-size: 2em;
+      text-transform: uppercase;
+    }
   }
-  &-down{
-    margin: initial;
-    color: black;
+  &__down{
+    color: rgb(146, 37, 37);
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 2em;
   }
 }
 .menu{
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width:800px){
+    
+  }
 }
 .banner{
   height: 403px;
@@ -60,40 +67,34 @@ body  {
   background-size: cover;
   border-bottom: 3px solid #fb9c06;
   border-top: 3px solid #fb9c06;
+  @media (max-width:800px){
+
+  }
 }
-.banner .container{
+.banner> .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-}
-.banner .container p{
-  max-width: 420px;
-  margin-left:30px ;
-  &:first-child{
-   color: #fcba50;
-   background-color: rgba(71, 75, 75, 0.842);
-   padding: 10px;
-   text-transform: uppercase;
-   font-weight: bold;
-   font-size: 2em;
- }
-}
-.banner p:last-child{
-  color:black;
-  background-color: rgba(252,199,88,0.7);
-  padding: 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2em;
+  & p{
+    max-width: 420px;
+    margin-left:30px ;
+     &:first-child{
+      background-color: rgba(71, 75, 75, 0.842);
+      padding: 10px;
+     }
+     &:last-child{
+      background-color: rgba(252,199,88,0.7);
+      padding: 10px;
+    }
+  }
 }
 .four-columns{
   display: flex;
+  &__item{
+    width: 25%;
+  }
 }
-.four__columns__item{
-  width: 25%;
-}
-
 .header{
 text-align: center;
 color: #fb9c06;
@@ -117,32 +118,32 @@ font-size: 26px;
 .section{
   padding-bottom: 10px;
 }
-// .form-wrap{
- 
-// }
 .field{
   display:grid;
   grid-template-columns: 8% 90%;
   gap: 2%;
+  @media (max-width:800px){
+    
+  }
   
-&__name{
-  color: #fb9c06;
-  text-transform: capitalize;
+  &__name{
+    color: #fb9c06;
+    text-transform: capitalize;
   &:after{
       content: ":"
    }
 }
-&__input{
-  height: 35px;
-  border: none;
-  background-color:#f8f7f6;
-  border-top: 2px solid lightgrey;
-  border-left: 3px solid lightgrey;
-  &:hover{
-    color: #cc830f;
-    opacity: initial;
+  &__input{
+    height: 35px;
+    border: none;
+    background-color:#f8f7f6;
+    border-top: 2px solid lightgrey;
+    border-left: 3px solid lightgrey;
+     &:hover{
+      color: #cc830f;
+      opacity: initial;
   }
-    &--textarea{
+     &--textarea{
       height: 100px;
     }
  
