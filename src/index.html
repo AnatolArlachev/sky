@@ -44,7 +44,7 @@
 				@@include('./partials/icon/_icon.html',
 				{"item": "about",
 				"stringOne":"man",
-				"stringTwo":"asdasdfafadf",
+				"stringTwo":"asdaasdasdasdgadf",
 				"stringThree":"look"})
 				@@include('./partials/icon/_icon.html',
 				{"item": "work",
@@ -58,8 +58,10 @@
 
 	<div class="banner">
 		<div class="container">
-			<p class="text-logo__up text-logo__up--uppercaseText">do you like rabbits?</p>
-			<p class="text-logo__down">do you like oranges?</p>
+			<div class="text-logo">
+				<p class="text-logo__up text-logo__up--uppercaseText">do you like rabbits?</p>
+				<p class="text-logo__down">do you like oranges?</p>
+			</div>
 		</div>
 	</div>
 	<main class="container">
@@ -127,7 +129,9 @@
 						<label for="message" class="field__name ">Message</label>
 						<textarea name="text" id="message" cols="30" rows="10"class="field__input field__input--textarea"></textarea>
 					</div>
-					<button type="submit">Submit</button>
+					<button>
+						Submit
+					</button>
 				</form>
 		</div>
 	</main>
