@@ -2,53 +2,57 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./main.scss">
-  <title>First project</title>
-  <script src="./js/main.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./main.scss">
+	<title>First project</title>
+	<script src="./js/main.js" defer></script>
 </head>
 
 <body>
-  <div class="content">
- 
-    <main class="wrapper-news">
-      <div class="wrapper-news-top">
-        <div class="switcher">
-          switcher
-        </div>
-        <div class="slider">
-          slider
-        </div>
-        <div class="main-news">
-          <p class="title">Main News</p>
-          <div class="main-news__item">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-          </div>
-         
-        </div>
-      </div>
-      <div class="wrapper-news-bottom">
-        wrapper-news-bottom
-      </div>
-    </main>
-    <aside class="aside">
-      <div class="video">
-        video
-      </div>
-      <div class="inersting">
-        inersting
-      </div>
-    </aside>
+	<div class="content">
+		<main class="wrapper-news">
+			<div class="wrapper-news__top">
+				<div class="navigation">
+					@@include('./partials/pop-up-window/_pop-up-window.html')
+				</div>
+				<div class="switcher">
+					<div class="picture">
+						<img src="./img/Clopp.png" alt="Yurgen Clopp">
+					</div>
+					<div class="slider">
+						<p class="text">Jurgen Klopp makes a sexy Liverpool</p>
+						<p class="text">Liverpool outkast Jose Enrique set to be handed lifeline by Jurgen Klopp</p>
+					</div>
+				</div>
+				<div class="main-news">
+					<p class="title">Main News</p>
+					<div class="main-news__item">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-news__bottom">
+				wrapper-news-bottom
+			</div>
+		</main>
+		<aside class="aside">
+			<div class="video">
+				video
+			</div>
+			<div class="inersting">
+				inersting
+			</div>
+		</aside>
 
-  </div>
-  <footer>
-    footer
-  </footer>
+	</div>
+	<footer>
+		footer
+	</footer>
 
 
 </body>

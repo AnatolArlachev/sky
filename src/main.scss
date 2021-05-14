@@ -1,6 +1,9 @@
+@import "./partials/pop-up-widow/pop-up-window.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
+
 .content{
   width: 1000px;
   display: flex;
@@ -10,17 +13,31 @@ body * {
   display: flex;
   flex-direction: column;
   flex-basis: 70%;
+  &__top{
+    display: flex;
+    flex-direction: column;
+  }
 }
-.aside{
-  flex-basis: 30%;
+.switcher{
+  display: flex;
+  padding-top: 21px;
 }
+.slider{
+  width: 100%;
+  padding: 0 52px 0 22px;
+}
+
 .main-news{
   display: flex;
   flex-direction: column;
+  &__item{
+      display: flex;
+  }
 }
-.main-news__item{
-  display: flex;
-}
+
 .title{
   display: block;
+}
+.aside{
+  flex-basis: 30%;
 }

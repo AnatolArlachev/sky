@@ -1,0 +1,43 @@
+.menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    cursor: pointer;
+    margin: initial;
+    font-size: 16px;
+    background-color: rgb(235, 235, 235);
+    &__link{
+      position: relative;
+      &:hover> .sub-menu{
+        color: white;
+        clip:auto;
+        width: auto;
+        height: auto;
+        margin: 0;
+      }
+    } 
+  }
+    .link{
+      display: block;
+      color: black;
+      text-decoration: none;
+      padding: 8px;
+      white-space: nowrap;
+      &:hover{
+        background-color: black;
+        color: white;
+      }
+    }
+    .sub-menu{
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      // flex-direction: column;
+      padding-left: 0;
+      list-style: none;
+      cursor: pointer;
+      font-size: 16px;
+      background-color: rgb(235, 235, 235);
+      position: absolute;
+    }
