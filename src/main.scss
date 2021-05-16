@@ -49,15 +49,18 @@ body  {
 .fas{
   font-size: 26px;
   color: rgb(201, 24, 24);
-  &:hover{
-    font-size: 30px;
-   }
 }
+
+
 button{
   border: initial;
   background-color: initial;
   padding: initial;
   cursor: pointer;
+  &:hover{
+    color: lawngreen;
+    // font-size: 30px;
+   }
 }
 
 .text{
