@@ -1,6 +1,6 @@
-@import "./partials/pop-up-widow/pop-up-window.scss";
+@import "./partials/pop-up-window/pop-up-window.scss";
 
-body * {
+body  {
   outline: 1px solid lightgrey;
 }
 
@@ -21,17 +21,68 @@ body * {
 .switcher{
   display: flex;
   padding-top: 21px;
+  height: 250px;
+  border-bottom: 5px solid rgb(201, 24, 24);
 }
 .slider{
   width: 100%;
   padding: 0 52px 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &__item{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+   &__text{
+    font-size: 16px;
+    margin: initial;
+    margin: 5px;
+     img{
+       position: relative;
+       top: 2px; 
+    }
+   }
+  }
 }
-.sub{
+.fas{
+  font-size: 26px;
+  color: rgb(201, 24, 24);
+  &:hover{
+    font-size: 30px;
+   }
+}
+button{
+  border: initial;
+  background-color: initial;
+  padding: initial;
+  cursor: pointer;
+}
+
+.text{
+  margin: initial;
   font-size: 30px;
-  color: red;
+  color: rgb(201, 24, 24);
   font-family: serif;
-  word-spacing: 10px 
+  word-spacing: 10px ;
+  &--black{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+    line-height: 18px;
+  }
+ 
 }
+
+
+   
+
+
+
+
+
+
+
 
 .main-news{
   display: flex;
@@ -47,14 +98,4 @@ body * {
 .aside{
   flex-basis: 30%;
 }
-// .sub{
-//   font-size: 30px;
-//   color: red;
-//   font-family: serif;
-//   word-spacing: 10px ;
-// }
-// .text{
-//   font-size: 14px;
-//   font-family: sans-serif;
-//   color: black;
-// }
+
