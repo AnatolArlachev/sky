@@ -1,6 +1,7 @@
 @import "./partials/pop-up-window/pop-up-window.scss";
+@import "./partials/news-card/news-card.scss";
 
-body  {
+body * {
   outline: 1px solid lightgrey;
 }
 
@@ -16,6 +17,10 @@ body  {
   &__top{
     display: flex;
     flex-direction: column;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
   }
 }
 .switcher{
@@ -59,7 +64,6 @@ button{
   cursor: pointer;
   &:hover{
     color: lawngreen;
-    // font-size: 30px;
    }
 }
 
@@ -75,7 +79,6 @@ button{
     color: black;
     line-height: 18px;
   }
- 
 }
 
 
@@ -93,12 +96,54 @@ button{
   flex-direction: column;
   &__item{
       display: flex;
+      justify-content: space-between;
+  }
+}
+.heading{
+  width: 100%;
+  overflow: hidden;
+}
+.title{
+  font-family: sans-serif;
+  font-weight: initial;
+  position: relative;
+  &:after {
+    content: '';
+    border-bottom: 2px solid black;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+  }
+  &--red-line{
+    color: rgb(95, 95, 238);
+    &:after{
+      border-bottom: 2px solid rgb(201, 24, 24);
+    }
   }
 }
 
-.title{
-  display: block;
+.news-card{
+ display: flex;
+ flex-direction: column;
+ flex-basis: 22%;
 }
+
+
+
+
+.important-news{
+  flex-basis: 61%;
+}
+.important-news-in-picture{
+  flex-basis: 35%;
+}
+  
+a {
+  text-decoration: none;
+}
+
+
+
 .aside{
   flex-basis: 30%;
 }
