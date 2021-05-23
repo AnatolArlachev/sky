@@ -1,8 +1,10 @@
-.news-card__image{
+
+  // .news-card__text{
+  //   word-wrap: break-word;
+  // }
+  .image-card{
     height: 90px;
-    // width: 142px;
-  
+    &--big-card{
+      height: 140px;// закончить с переменной карточкой
+    }
   } 
-  .news-card__text{
-    word-wrap: break-word;
-  }

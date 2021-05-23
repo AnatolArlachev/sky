@@ -134,13 +134,31 @@ button{
 .important-news{
   flex-basis: 61%;
 }
+.special-picture{
+  list-style-type: none;
+  display:flex;
+  width: 100%;
+  
+}
+.last-news{
+  &__list{
+    padding: 0;
+    padding-inline-start: 20px;
+  }
+}
 .important-news-in-picture{
   flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__item{
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    flex-basis: 31%;
+  }
 }
   
-a {
-  text-decoration: none;
-}
 
 
 
