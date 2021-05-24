@@ -42,7 +42,7 @@
 					
 				
 					<div class="heading">
-						<h2 class="title"><span class="title__text">Main News</span> </h2>
+						<h2 class="heading__title">Main News </h2>
 					</div>
 					<div class="main-news__item">
 						<div class="news-card">
@@ -72,8 +72,8 @@
 			<div class="wrapper-news__bottom">
 				<div class="important-news">
 					<div class="last-news">
-						<div class="heading">
-							<h2 class="title title--red-line">Last News</h2>
+						<div class="heading heading--red-line">
+							<h2 class="heading__title">Last News</h2>
 						</div>
 						<div>
 							<ul class="last-news__list">
@@ -91,8 +91,8 @@
 						</div>
 					</div>
 					<div class="last-news">
-						<div class="heading">
-							<h2 class="title title--red-line">Newsfeed</h2>
+						<div class="heading heading--red-line">
+							<h2 class="heading__title">News feed</h2>
 						</div>
 						<div class="special-picture">
 							<img src="./img/Zlatka.png" alt="">
@@ -114,20 +114,37 @@
 				</div>
 				<div class="important-news-in-picture">
 					<div class="important-news-in-picture__item " >
-						<!-- @@include('./partials/news-card/_news-big-card.html',
+						@@include('./partials/news-card/_news-big-card.html',
 						{"image":"/img/cupOfLigaChempions.png",
-						"cardContent":"The FIFA Ballon d'Or is an annual assotiation football award given by FIFA"}) -->
+						"cardContent":"Here is now Leage Champions trophy looks like"})
 					</div>
-					<div class="important-news-in-picture__item"></div>
-					<div class="important-news-in-picture__item"></div>
+					<div class="important-news-in-picture__item">
+						@@include('./partials/news-card/_news-big-card.html',
+						{"image":"/img/cupOfLigaChempions.png",
+						"cardContent":"Here is now Leage Champions trophy looks like"})
+					</div>
+					<div class="important-news-in-picture__item">
+						@@include('./partials/news-card/_news-big-card.html',
+						{"image":"/img/cupOfLigaChempions.png",
+						"cardContent":"Here is now Leage Champions trophy looks like"})
+					</div>
 				</div>
 			</div>
 		</main>
 		<aside class="aside">
 			<div class="video">
-				<div class="heading">
-					<h2 class="title title--center-line">Video</h2>
+				<div class="heading heading--center-line">
+					<h2 class="heading__title">Video </h2>
 				</div>
+				<div class="video__item">
+					@@include('./partials/news-card/_news-video-card.html',
+					{"image":"/img/videoOne.png",
+					"cardContent":"Here is now Leage Champions trophy looks like"})
+				</div>
+				<div class="video__item"></div>
+				<div class="video__item"></div>
+				<div class="video__item"></div>
+				<div class="video__item"></div>
 			</div>
 			<div class="inersting">
 				inersting

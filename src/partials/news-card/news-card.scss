@@ -5,6 +5,10 @@
   .image-card{
     height: 90px;
     &--big-card{
-      height: 140px;// закончить с переменной карточкой
+      height: 140px;
+    }
+    &--video-card{
+      display: flex;
+      height: 88px;
     }
   } 
