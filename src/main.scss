@@ -17,13 +17,17 @@ body * {
   display: flex;
   flex-direction: column;
   flex-basis: 68%;
+  // justify-content: space-between;
   &__top{
     display: flex;
     flex-direction: column;
+    // flex-basis:46%;
   }
   &__bottom{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+    // flex-basis:45%
   }
 }
 .switcher{
@@ -147,6 +151,12 @@ button{
       }
     }
   }
+  &--underline{
+    &>.heading__title{
+      z-index: 0;
+      bottom: 5px; 
+    }
+  }
 }
 
 
@@ -202,7 +212,7 @@ button{
   justify-content: space-between;
   flex-basis:46%;
   border-bottom: 5px solid black;
-  padding-bottom: 45px;
+  padding-bottom: 5px;
   &__item{
     display: flex;
     flex-basis: 15%;
@@ -210,7 +220,7 @@ button{
   }
 }
 .inersting{
-  flex-basis: 45%;
+  flex-basis: 50%;
 }
 
 

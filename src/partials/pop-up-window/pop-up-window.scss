@@ -37,6 +37,22 @@
           background-color: white;
         }
       }
+      &--special{
+        cursor: pointer;
+        margin: 40px 0 0;
+        padding-left: 10px;
+        color: rgb(95, 95, 238);
+        
+        &:after{
+          content: '\f061';
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 0.8rem;
+          padding-left: 5px;
+          color: rgb(95, 95, 238);
+        }
+
+      }
     }
     .sub-menu{
       clip: rect(0 0 0 0);
