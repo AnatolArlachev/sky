@@ -1,3 +1,48 @@
 body * {
   outline: 1px solid lightgrey;
+  
+}
+.cap{
+  margin: 0 auto;
+  max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
+.name-of-page{
+  font-size: 42px;
+  font-family: 'Pacifico', cursive;
+  padding-top: 3px;
+}
+// .nav{
+
+  
+// }
+.menu{
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-top: 38px;
+  &__link{
+    padding: 0 35px;
+    &:last-of-type{
+      padding-right: 0;
+    }
+
+  }
+  
+}
+.link{
+  text-decoration: none;
+}
+.text-up{
+  font-size: 12px;
+  font-family: 'Bebas Neue';
+  color: #a5a5a5;
+  margin-bottom: 10px;
+}
+.text-down{
+  font-size: 20px;
+  color: #474747;
+  Font-family: 'Bebas Neue';
+  margin-top: 0;
 }
