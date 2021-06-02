@@ -2,9 +2,12 @@ body * {
   outline: 1px solid lightgrey;
   
 }
-.cap{
+
+.container{
   margin: 0 auto;
   max-width: 940px;
+}
+.cap{
   display: flex;
   justify-content: space-between;
 }
@@ -45,4 +48,26 @@ body * {
   color: #474747;
   Font-family: 'Bebas Neue';
   margin-top: 0;
+}
+.text-first{
+  margin-top: 0;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 16px;
+  line-height: 21px;
+  color: #474747;
+  font-family: "Bebas Neue";
+}
+.text-second{
+  padding-left: 1rem;
+  font-size: 12px;
+  line-height: 14px;
+  color: #474747;
+  
+  
+}
+.description-slider{
+  height: 95px;
+  width: 100%;
+  background-color: rgba(231, 231, 231, 0.308);
 }
