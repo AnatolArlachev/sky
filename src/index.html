@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./main.scss">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<title>Blitz</title>
+	<script src="./js/main.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"
+		integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/7dad511364.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header class="cap">
+			<p class="name-of-page">BlitzH</p>
+			<div class="nav">
+				<ul class="menu">
+					<li class="menu__link">
+						<a href="/home.html" class="link">
+							<p class="text-up">HOME PAGE</p>
+							<p class="text-down">HOME</p>
+						</a>
+					</li>
+					<li class="menu__link">
+						<a href="/about.html" class="link">
+							<p class="text-up">WHO ARE WE?</p>
+							<p class="text-down">ABOUT</p>
+						</a>
+					</li>
+					<li class="menu__link">
+						<a href="/projects.html" class="link">
+							<p class="text-up">MY PORTFOLIO</p>
+							<p class="text-down">PROJECTS</p>
+						</a>
+					</li>
+					<li class="menu__link">
+						<a href="/blog.html" class="link">
+							<p class="text-up">LATEST NEWS</p>
+							<p class="text-down">BLOG</p>
+						</a>
+					</li>
+					<li class="menu__link">
+						<a href="/contact.html" class="link">
+							<p class="text-up">GET IN TOUCH</p>
+							<p class="text-down">CONTACT</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div class="wr-slider">
+				<div class="splide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide"><img src="/img/main.png" alt="2"></li>
+							<li class="splide__slide"><img src="/img/main.png" alt="3"></li>
+							<li class="splide__slide"><img src="/img/main.png" alt="4"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="description-slider">
+					<p class="text-first">JESUS TYPOGRAFY WALLPAPER</p>
+					<p class="text-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus
+						perspiciatis eum officia tempore tenetur eos et quo libero modi delectus a, quasi nesciunt cumque
+						placeat aliquid deserunt nam doloremque?</p>
+				</div>
+				<script>
+					new Splide('.splide').mount();
+				</script>
+			</div>
+			<div class="card-news">
+				<div class="card-news__item">
+					<p class="card-news__header">
+						<i class="fas fa-search"></i>
+						CHECK OUT OUR LATEST PROJECTS
+					</p>
+	
+					<p class="card-text">
+						Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.
+						Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
+						Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
+						Cras varius fermentum iaculis.
+						Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+					</p>
+					<input type="checkbox" class="accordion-input" id="status--open">
+					<label for="status--open" class="accordion-title">
+						FIND OUT MORE
+					</label>
+	
+					<div class="accordion-text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum,
+							eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!
+						</p>
+	
+					</div>
+				</div>
+				<!-- <div class="card-news__item">
+					
+						<p class="card-news__header">
+						  <i class="fas fa-search"></i>
+						  CHECK OUT OUR LATEST PROJECTS
+						</p>
+						
+						<p>
+						  Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.
+						  Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
+						  Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
+						   Cras varius fermentum iaculis.
+						  Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+						</p>
+						<input type="checkbox" class="accordion-input" id="status--open">
+						<label for="status--open" class="accordion-title">
+							FIND OUT MORE
+						</label>
+						
+						<div class="accordion-text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum,
+								eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!
+							</p>
+		
+						</div>
+				</div>
+				<div class="card-news__item">
+					
+						<p class="card-news__header">
+						  <i class="fas fa-search"></i>
+						  CHECK OUT OUR LATEST PROJECTS
+						</p>
+						
+						<p>
+						  Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.
+						  Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
+						  Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
+						   Cras varius fermentum iaculis.
+						  Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+						</p>
+						<input type="checkbox" class="accordion-input" id="status--open">
+						<label for="status--open" class="accordion-title">
+							FIND OUT MORE
+						</label>
+						
+						<div class="accordion-text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum,
+								eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!
+							</p>
+		
+						</div>
+				</div> -->
+	
+			</div>
+			<p class="latest-work"><span class="latest-work__text">MY LATEST WORK</span></p>
+		</main>
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
