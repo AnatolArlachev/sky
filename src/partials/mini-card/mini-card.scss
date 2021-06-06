@@ -1,0 +1,51 @@
+@import "./variables.scss";
+
+
+.card-news__header{
+    display: flex;
+    @include mainFont(20px);     
+  }
+  .card-text{
+    @include mainFont();
+    padding: 5px;  
+  }
+
+.accordion-title{
+    display: block;
+    cursor: pointer;
+    padding: 15px 0;
+    @include mainFont(14px);
+    font-weight: bold;
+    &:before{
+      content: "\f101";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 12px;
+      color:  $main-color;
+      padding: 0 10px 0 5px;
+    }
+  
+  }
+  .fas{
+    @include iconFont();
+  }
+
+
+
+.accordion-input{
+    position: absolute;
+    width: 0;
+    height: 0;
+    
+  }
+  .accordion-text{
+    display: none;
+    padding: 10px 0;
+  
+  }
+  .accordion-input:checked ~ .accordion-text{
+    display: block;
+  }
+  .accordion-text{
+    @include mainFont();
+  }

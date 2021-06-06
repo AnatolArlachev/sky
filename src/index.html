@@ -20,11 +20,11 @@
 <body>
 	<div class="container">
 		<header class="cap">
-			<p class="name-of-page">BlitzH</p>
+			<p class="name-of-page">Blitz</p>
 			<div class="nav">
 				<ul class="menu">
 					<li class="menu__link">
-						<a href="/home.html" class="link">
+						<a href="/index.html" class="link">
 							<p class="text-up">HOME PAGE</p>
 							<p class="text-down">HOME</p>
 						</a>
@@ -79,31 +79,12 @@
 			</div>
 			<div class="card-news">
 				<div class="card-news__item">
-					<p class="card-news__header">
-						<i class="fas fa-search"></i>
-						CHECK OUT OUR LATEST PROJECTS
-					</p>
-	
-					<p class="card-text">
-						Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.
-						Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
-						Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
-						Cras varius fermentum iaculis.
-						Aenean sodales nibh non lectus tempor a interdum justo ultricies.
-					</p>
-					<input type="checkbox" class="accordion-input" id="status--open">
-					<label for="status--open" class="accordion-title">
-						FIND OUT MORE
-					</label>
-	
-					<div class="accordion-text">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum,
-							eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!
-						</p>
-	
-					</div>
+					@@include('./partials/mini-card/_mini-card.html',
+					{"nameCard": "CHECK OUT OUR LATEST PROJECTS",
+				    "textCard": "Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc.Cras varius fermentum iaculis.Aenean sodales nibh non lectus tempor a interdum justo ultricies.",
+				    "@@extraText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!
+					"})
+					
 				</div>
 				<!-- <div class="card-news__item">
 					
@@ -164,6 +145,12 @@
 	
 			</div>
 			<p class="latest-work"><span class="latest-work__text">MY LATEST WORK</span></p>
+			<div class="offers">
+				<div class="offers__item">1</div>
+				<div class="offers__item">2</div>
+				<div class="offers__item">3</div>
+				<div class="offers__item">4</div>
+			</div>
 		</main>
 
 

@@ -1,0 +1,13 @@
+$main-color: #474747;
+
+@mixin mainFont ($fz:12px, $color:$main-color){
+    font-size: $fz;
+    color: $color;
+    font-family: "Bebas Neue";
+}
+@mixin iconFont (){
+    display: block;
+    font-size: 38px;
+    color: #999999;
+    padding-right: 35px;
+}

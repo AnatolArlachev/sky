@@ -1,3 +1,7 @@
+@import "./partials/mini-card/mini-card.scss";
+// @import "./variables.scss";
+
+
 body  *{
   outline: 1px solid lightgrey;
   
@@ -14,7 +18,9 @@ body  *{
 .name-of-page{
   font-size: 42px;
   font-family: 'Pacifico', cursive;
+  font-weight: 400;
   padding-top: 3px;
+  color: $main-color;
 }
 // .nav{
 
@@ -37,7 +43,10 @@ body  *{
 .link{
   text-decoration: none;
 }
+
+
 .text-up{
+  
   font-size: 12px;
   font-family: 'Bebas Neue';
   color: #a5a5a5;
@@ -45,8 +54,8 @@ body  *{
 }
 .text-down{
   font-size: 20px;
-  color: #474747;
-  Font-family: 'Bebas Neue';
+  color: $main-color;
+  font-family: 'Bebas Neue';
   margin-top: 0;
 }
 .text-first{
@@ -55,24 +64,18 @@ body  *{
   padding-left: 1rem;
   font-size: 16px;
   line-height: 21px;
-  color: #474747;
+  color: $main-color;
   font-family: "Bebas Neue";
 }
 .text-second{
   padding-left: 1rem;
   font-size: 12px;
   line-height: 14px;
-  color: #474747; 
+  color: $main-color; 
 }
 
 
-.card-text{
-  font-size: 12px;
-  line-height: 18px;
-  color: #414141;
-  font-family:"Bebas Neue";
-  padding: 5px;  
-}
+
 
 .description-slider{
   height: 95px;
@@ -88,57 +91,14 @@ body  *{
     flex-direction: column;
     flex-basis: 29%;
   }
-  &__header{
-    display: flex;
-    font-size: 20px;
-    line-height: 24px;
-    color: #464646;
-    font-family: "Bebas Neue";
-     
-  }
-}
-.fas{
-  display: block;
-  font-size: 38px;
-  color: #999999;
-  padding-right: 35px;
 }
 
 
 
 
-.accordion-title{
-  display: block;
-  cursor: pointer;
-  padding: 15px 0;
-  color: #474747;
-  font-size: 12px;
-  font-family: "Bebas Neue";
-  &:before{
-    content: "\f101";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 12px;
-    color:  #474747;
-    padding: 0 10px 0 5px;
-  }
 
-}
-.accordion-input{
-  position: absolute;
-  // appearance: none;
-  width: 0;
-  height: 0;
-  
-}
-.accordion-text{
-  display: none;
-  padding: 10px 0;
 
-}
-.accordion-input:checked ~ .accordion-text{
-  display: block;
-}
+
 
 
 
@@ -148,19 +108,22 @@ body  *{
   display: flex;
   align-items: center;
   justify-content: center;
-  // background: linear-gradient(
-  // rgb(153, 35, 35) 50%,
-  // transparent 50%);
-  // background-size: 1em 0,5em;
   background-image: url(/img/background.png);
-  // background-color: rgba(95, 33, 33, 0.541);
   &__text{
     line-height: 30px;
     padding: 0 25px;
     font-size: 18px;
-    color: #474747;
+    color: $main-color;
     font-family: "Bebas Neue";
     background: white;
+  }
+}
+
+.offers{
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    flex-basis: 23%;
   }
 }
 
