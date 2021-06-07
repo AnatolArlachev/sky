@@ -4,10 +4,11 @@ $main-color: #474747;
     font-size: $fz;
     color: $color;
     font-family: "Bebas Neue";
+    background: white;
 }
 @mixin iconFont (){
     display: block;
     font-size: 38px;
-    color: #999999;
-    padding-right: 35px;
+    color: #9a9a9a;
+    padding: 5px 35px 10px 10px;
 }

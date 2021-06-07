@@ -45,41 +45,33 @@ body  *{
 }
 
 
-.text-up{
-  
-  font-size: 12px;
-  font-family: 'Bebas Neue';
-  color: #a5a5a5;
-  margin-bottom: 10px;
-}
-.text-down{
-  font-size: 20px;
-  color: $main-color;
-  font-family: 'Bebas Neue';
-  margin-top: 0;
-}
-.text-first{
-  margin-top: 0;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  font-size: 16px;
-  line-height: 21px;
-  color: $main-color;
-  font-family: "Bebas Neue";
-}
-.text-second{
-  padding-left: 1rem;
-  font-size: 12px;
-  line-height: 14px;
-  color: $main-color; 
-}
+.text{
+  @include mainFont();
+  &--a5{
+    @include mainFont($color:#a5a5a5);
+    // margin-bottom: 10px;
+  }
 
-
-
+  &--font20{
+    @include mainFont($fz: 20px);
+    // margin-top: 0;
+  }
+  &--font16{
+    @include mainFont($fz: 16px);
+  }
+  &--font18{
+    @include mainFont($fz: 18px);
+    line-height: 30px;
+    padding: 0 25px;
+  }
+  &--font14px{
+    @include mainFont($fz: 14px);
+    // font-weight: bolder;
+  }
+}
 
 .description-slider{
-  height: 95px;
-  width: 100%;
+  padding: 4px 1rem;
   background-color: rgba(231, 231, 231, 0.308);
 }
 .card-news{
@@ -109,14 +101,6 @@ body  *{
   align-items: center;
   justify-content: center;
   background-image: url(/img/background.png);
-  &__text{
-    line-height: 30px;
-    padding: 0 25px;
-    font-size: 18px;
-    color: $main-color;
-    font-family: "Bebas Neue";
-    background: white;
-  }
 }
 
 .offers{

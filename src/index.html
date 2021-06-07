@@ -25,32 +25,32 @@
 				<ul class="menu">
 					<li class="menu__link">
 						<a href="/index.html" class="link">
-							<p class="text-up">HOME PAGE</p>
-							<p class="text-down">HOME</p>
+							<p class="text text--a5">HOME PAGE</p>
+							<p class="text text--font20">HOME</p>
 						</a>
 					</li>
 					<li class="menu__link">
 						<a href="/about.html" class="link">
-							<p class="text-up">WHO ARE WE?</p>
-							<p class="text-down">ABOUT</p>
+							<p class="text text--a5">WHO ARE WE?</p>
+							<p class="text text--font20">ABOUT</p>
 						</a>
 					</li>
 					<li class="menu__link">
 						<a href="/projects.html" class="link">
-							<p class="text-up">MY PORTFOLIO</p>
-							<p class="text-down">PROJECTS</p>
+							<p class="text text--a5">MY PORTFOLIO</p>
+							<p class="text text--font20">PROJECTS</p>
 						</a>
 					</li>
 					<li class="menu__link">
 						<a href="/blog.html" class="link">
-							<p class="text-up">LATEST NEWS</p>
-							<p class="text-down">BLOG</p>
+							<p class="text text--a5">LATEST NEWS</p>
+							<p class="text text--font20">BLOG</p>
 						</a>
 					</li>
 					<li class="menu__link">
 						<a href="/contact.html" class="link">
-							<p class="text-up">GET IN TOUCH</p>
-							<p class="text-down">CONTACT</p>
+							<p class="text text--a5">GET IN TOUCH</p>
+							<p class="text text--font20">CONTACT</p>
 						</a>
 					</li>
 				</ul>
@@ -68,8 +68,10 @@
 					</div>
 				</div>
 				<div class="description-slider">
-					<p class="text-first">JESUS TYPOGRAFY WALLPAPER</p>
-					<p class="text-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus
+					<p class="text text--font16">JESUS TYPOGRAFY WALLPAPER</p>
+					<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus
+						perspiciatis eum officia tempore tenetur eos et quo libero modi delectus a, quasi nesciunt cumque
+						placeat aliquid deserunt nam doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus
 						perspiciatis eum officia tempore tenetur eos et quo libero modi delectus a, quasi nesciunt cumque
 						placeat aliquid deserunt nam doloremque?</p>
 				</div>
@@ -81,75 +83,56 @@
 				<div class="card-news__item">
 					@@include('./partials/mini-card/_mini-card.html',
 					{"nameCard": "CHECK OUT OUR LATEST PROJECTS",
+					"icon": "fa-search",
 				    "textCard": "Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc.Cras varius fermentum iaculis.Aenean sodales nibh non lectus tempor a interdum justo ultricies.",
-				    "@@extraText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!
-					"})
-					
-				</div>
-				<!-- <div class="card-news__item">
-					
-						<p class="card-news__header">
-						  <i class="fas fa-search"></i>
-						  CHECK OUT OUR LATEST PROJECTS
-						</p>
-						
-						<p>
-						  Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.
-						  Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
-						  Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
-						   Cras varius fermentum iaculis.
-						  Aenean sodales nibh non lectus tempor a interdum justo ultricies.
-						</p>
-						<input type="checkbox" class="accordion-input" id="status--open">
-						<label for="status--open" class="accordion-title">
-							FIND OUT MORE
-						</label>
-						
-						<div class="accordion-text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum,
-								eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!
-							</p>
-		
-						</div>
+				    "extraText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!"})	
 				</div>
 				<div class="card-news__item">
-					
-						<p class="card-news__header">
-						  <i class="fas fa-search"></i>
-						  CHECK OUT OUR LATEST PROJECTS
-						</p>
-						
-						<p>
-						  Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.
-						  Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
-						  Nam mi erat, porta id ultrices nec, pellentesque vel nunc.
-						   Cras varius fermentum iaculis.
-						  Aenean sodales nibh non lectus tempor a interdum justo ultricies.
-						</p>
-						<input type="checkbox" class="accordion-input" id="status--open">
-						<label for="status--open" class="accordion-title">
-							FIND OUT MORE
-						</label>
-						
-						<div class="accordion-text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum,
-								eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!
-							</p>
-		
-						</div>
-				</div> -->
-	
+					@@include('./partials/mini-card/_mini-card.html',
+					{"nameCard": "GUARANTEE 5 STAR QUALITY WORK",
+					"icon": "fa-star",
+				    "textCard": "Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc.Cras varius fermentum iaculis.Aenean sodales nibh non lectus tempor a interdum justo ultricies.",
+				    "extraText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!"})
+				</div>
+				<div class="card-news__item">
+					@@include('./partials/mini-card/_mini-card.html',
+					{"nameCard": "STAY CONNECTED BY READING THE BLOG",
+					"icon": "fa-comment-alt",
+				    "textCard": "Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc.Cras varius fermentum iaculis.Aenean sodales nibh non lectus tempor a interdum justo ultricies.",
+				    "extraText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!"})
+				</div>
 			</div>
-			<p class="latest-work"><span class="latest-work__text">MY LATEST WORK</span></p>
+			<p class="latest-work"><span class="text text--font18">MY LATEST WORK</span></p>
 			<div class="offers">
-				<div class="offers__item">1</div>
-				<div class="offers__item">2</div>
-				<div class="offers__item">3</div>
-				<div class="offers__item">4</div>
+				<div class="offers__item">
+					@@include('./partials/mini-card/_mini-card-picture.html',
+					{"nameCard": "VALLARTA BROCHURE",
+					"picture": "/img/picture1.png",
+				    "textCard": "Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.",
+				    "extraText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!"})	
+				</div>
+				<div class="offers__item">
+					@@include('./partials/mini-card/_mini-card-picture.html',
+					{"nameCard": "PHOTOSHOP TUTORIAL",
+					"picture": "/img/picture2.png",
+				    "textCard": "Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.",
+				    "extraText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!"})	
+				</div>
+				<div class="offers__item">
+					@@include('./partials/mini-card/_mini-card-picture.html',
+					{"nameCard": "BUSINESS CARDS",
+					"picture": "/img/picture3.png",
+				    "textCard": "Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.",
+				    "extraText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!"})	
+				</div>
+				<div class="offers__item">
+					@@include('./partials/mini-card/_mini-card-picture.html',
+					{"nameCard": "WEBSITE DESIGN",
+					"picture": "/img/picture4.png",
+				    "textCard": "Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.",
+				    "extraText":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique quis debitis numquam ab adipisci accusamus ipsam perferendis earum, eveniet, cum voluptas quae expedita inventore vitae odit dignissimos libero beatae!"})	
+				</div>
+
 			</div>
 		</main>
 

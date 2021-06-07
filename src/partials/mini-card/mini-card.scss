@@ -1,12 +1,11 @@
 @import "./variables.scss";
 
+.card-header{
+  display: flex;
+}
 
-.card-news__header{
-    display: flex;
-    @include mainFont(20px);     
-  }
-  .card-text{
-    @include mainFont();
+  .padding5{
+    // display: flex;
     padding: 5px;  
   }
 
@@ -14,7 +13,6 @@
     display: block;
     cursor: pointer;
     padding: 15px 0;
-    @include mainFont(14px);
     font-weight: bold;
     &:before{
       content: "\f101";
@@ -40,7 +38,7 @@
   }
   .accordion-text{
     display: none;
-    padding: 10px 0;
+    padding: 5px;
   
   }
   .accordion-input:checked ~ .accordion-text{
@@ -48,4 +46,7 @@
   }
   .accordion-text{
     @include mainFont();
+  }
+  .picture{
+    border:3px solid  lightgrey;
   }
