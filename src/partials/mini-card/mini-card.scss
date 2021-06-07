@@ -6,6 +6,7 @@
 
   .padding5{
     // display: flex;
+    max-height: 100px;
     padding: 5px;  
   }
 
@@ -27,7 +28,9 @@
   .fas{
     @include iconFont();
   }
-
+.accordion{
+  position: relative;
+}
 
 
 .accordion-input{
@@ -39,10 +42,14 @@
   .accordion-text{
     display: none;
     padding: 5px;
+
   
   }
   .accordion-input:checked ~ .accordion-text{
     display: block;
+    position: absolute;
+    top: 88px;
+
   }
   .accordion-text{
     @include mainFont();
