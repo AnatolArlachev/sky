@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Blitz</title>
+    <script src="./js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"
+        integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7dad511364.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="cap">
+            <p class="name-of-page">Blitz</p>
+            <div class="nav">
+                <ul class="menu">
+                    <li class="menu__link">
+                        <a href="/index.html" class="link">
+                            <p class="text text--a5">HOME PAGE</p>
+                            <p class="text text--font20">HOME</p>
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="/about.html" class="link">
+                            <p class="text text--a5">WHO ARE WE?</p>
+                            <p class="text text--font20">ABOUT</p>
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="/projects.html" class="link">
+                            <p class="text text--a5">MY PORTFOLIO</p>
+                            <p class="text text--font20">PROJECTS</p>
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="/blog.html" class="link">
+                            <p class="text text--a5">LATEST NEWS</p>
+                            <p class="text text--font20">BLOG</p>
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="/contact.html" class="link">
+                            <p class="text text--a5">GET IN TOUCH</p>
+                            <p class="text text--font20">CONTACT</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="aboutUS">
+                <p class="text--font24">ABOUT US</p>
+                <p class="text--cursive">Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae 
+                    vitae dicta sunt explicabo nemo enim ipsam voluptatem.</p>
+                    <div class="border"></div>
+            </div>
+            <div class="card">
+                <div class="card__item2">
+                    @@include('./partials/mini-card/_mini-card-about.html',
+					{"nameCard": "OUR PHILOSOPHY",
+				    "textCard": "Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem.",
+				    "extraText":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Donec ut volutpat metus. Aliquam tortor lorem, fringilla tempor dignissim at, pretium et arcu. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."})	
+
+                </div>
+                <div class="card__item2"></div>
+                <div class="card__item2"></div>
+            </div>
+            <div>
+                <div>picture 1</div>
+                <div>picture 2</div>
+                <div>picture 3</div>
+            </div>
+        </main>
+    </div>

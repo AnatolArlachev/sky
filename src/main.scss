@@ -2,7 +2,7 @@
 // @import "./variables.scss";
 
 
-body  {
+body * {
   outline: 1px solid lightgrey;
   
 }
@@ -61,11 +61,21 @@ body  {
   }
   &--font18{
     @include mainFont($fz: 18px);
-    line-height: 30px;
-    padding: 0 25px;
+    &--pad25{
+      line-height: 30px;
+      padding: 0 25px;
+    }
+
   }
-  &--font14px{
+  &--font14{
     @include mainFont($fz: 14px);
+  }
+  &--font24{
+    @include mainFont($fz: 24px);
+  }
+  &--cursive{
+    @include mainFont( $color: #9e9e9e, $stFont:italic);
+    font-family: "Bebas";
   }
 }
 
@@ -93,15 +103,24 @@ body  {
   background-image: url(/img/background.png);
 }
 
-.offers{
+.card{
   display: flex;
   justify-content: space-between;
   &__item{
     flex-basis: 23%;
   }
+  &__item2{
+    flex-basis: 31%;
+  }
 }
-
-
+.border{
+  margin-top:17px ;
+  height: 7px;
+  background-image: url(/img/background.png);
+}
+.aboutUS{
+  padding-top: 10px; 
+}
 
 
 // .accordion {
