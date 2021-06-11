@@ -2,7 +2,7 @@
 // @import "./variables.scss";
 
 
-body * {
+body  {
   outline: 1px solid lightgrey;
   
 }
@@ -10,6 +10,7 @@ body * {
 .container{
   margin: 0 auto;
   max-width: 940px;
+  
 }
 .cap{
   display: flex;
@@ -47,7 +48,22 @@ body * {
 
 .text{
   @include mainFont();
-  &--a5{
+  &--font12smallMain{
+    @include mainFont();
+    font-family: "Bebas";
+  }
+  &--font12small{
+    @include mainFont( $color: #9e9e9e);
+    font-family: "Bebas";
+  }
+  &--font12color94{
+    @include mainFont( $color: #949393);
+  }
+  &--cursive{
+    @include mainFont( $color: #9e9e9e, $stFont:italic);
+    font-family: "Bebas";
+  }
+  &--colora5{
     @include mainFont($color:#a5a5a5);
     // margin-bottom: 10px;
   }
@@ -58,6 +74,9 @@ body * {
   }
   &--font16{
     @include mainFont($fz: 16px);
+    &--color51{
+      color: #515151;
+    }
   }
   &--font18{
     @include mainFont($fz: 18px);
@@ -72,10 +91,6 @@ body * {
   }
   &--font24{
     @include mainFont($fz: 24px);
-  }
-  &--cursive{
-    @include mainFont( $color: #9e9e9e, $stFont:italic);
-    font-family: "Bebas";
   }
 }
 
@@ -109,20 +124,43 @@ body * {
   &__item{
     flex-basis: 23%;
   }
-  &__item2{
+  &__item-about{
     flex-basis: 31%;
   }
+
 }
 .border{
   margin-top:17px ;
   height: 7px;
   background-image: url(/img/background.png);
+  &--borderMargin47{
+    margin:47px 0 60px ;
+  }
 }
 .aboutUS{
   padding-top: 10px; 
 }
-
-
+.margin-top--8px{
+  margin-top: 8px;
+}
+.margin-bottom--zero{
+  margin-bottom: 0px;
+}
+.margin-top--22px{
+  margin-top: 22px;
+}
+footer{
+  margin: 0 auto;
+  width: 1420px;
+  height: 115px;
+  background-color: #fbfbfb;
+}
+.footer{
+  margin: 0 auto;
+  max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
 // .accordion {
 //   &__status {
 //     display: none;

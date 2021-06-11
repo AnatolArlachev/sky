@@ -25,31 +25,31 @@
                 <ul class="menu">
                     <li class="menu__link">
                         <a href="/index.html" class="link">
-                            <p class="text text--a5">HOME PAGE</p>
+                            <p class="text text--colora5">HOME PAGE</p>
                             <p class="text text--font20">HOME</p>
                         </a>
                     </li>
                     <li class="menu__link">
                         <a href="/about.html" class="link">
-                            <p class="text text--a5">WHO ARE WE?</p>
+                            <p class="text text--colora5">WHO ARE WE?</p>
                             <p class="text text--font20">ABOUT</p>
                         </a>
                     </li>
                     <li class="menu__link">
                         <a href="/projects.html" class="link">
-                            <p class="text text--a5">MY PORTFOLIO</p>
+                            <p class="text text--colora5">MY PORTFOLIO</p>
                             <p class="text text--font20">PROJECTS</p>
                         </a>
                     </li>
                     <li class="menu__link">
                         <a href="/blog.html" class="link">
-                            <p class="text text--a5">LATEST NEWS</p>
+                            <p class="text text--colora5">LATEST NEWS</p>
                             <p class="text text--font20">BLOG</p>
                         </a>
                     </li>
                     <li class="menu__link">
                         <a href="/contact.html" class="link">
-                            <p class="text text--a5">GET IN TOUCH</p>
+                            <p class="text text--colora5">GET IN TOUCH</p>
                             <p class="text text--font20">CONTACT</p>
                         </a>
                     </li>
@@ -60,24 +60,77 @@
             <div class="aboutUS">
                 <p class="text--font24">ABOUT US</p>
                 <p class="text--cursive">Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae 
-                    vitae dicta sunt explicabo nemo enim ipsam voluptatem.</p>
-                    <div class="border"></div>
+                    vitae dicta sunt explicabo nemo enim ipsam voluptatem.
+                </p>
+                <div class="border"></div>
             </div>
             <div class="card">
-                <div class="card__item2">
+                <div class="card__item-about">
                     @@include('./partials/mini-card/_mini-card-about.html',
 					{"nameCard": "OUR PHILOSOPHY",
 				    "textCard": "Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem.",
 				    "extraText":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Donec ut volutpat metus. Aliquam tortor lorem, fringilla tempor dignissim at, pretium et arcu. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."})	
 
                 </div>
-                <div class="card__item2"></div>
-                <div class="card__item2"></div>
+                <div class="card__item-about">
+                    @@include('./partials/mini-card/_mini-card-about.html',
+                    {"nameCard": "OUR Mission",
+                    "textCard": "Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem.",
+                    "extraText":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Donec ut volutpat metus. Aliquam tortor lorem, fringilla tempor dignissim at, pretium et arcu. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."})	
+    
+                </div>
+                <div class="card__item-about">
+                    @@include('./partials/mini-card/_mini-card-about.html',
+					{"nameCard": "OUR HISTORY",
+				    "textCard": "Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem.",
+				    "extraText":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Donec ut volutpat metus. Aliquam tortor lorem, fringilla tempor dignissim at, pretium et arcu. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."})	
+                </div>
             </div>
-            <div>
-                <div>picture 1</div>
-                <div>picture 2</div>
-                <div>picture 3</div>
+            <div class=" border border--borderMargin47">                    
             </div>
+            <div class="card">
+                <div class="card__item-about">
+                    @@include('./partials/mini-card/_mini-card-about-picture.html',
+					{"nameCard": "JANE DOE",
+                    "underName": "CEO",
+                    "marginBottom": "margin-bottom--zero",
+                    "marginTop":"margin-top--8px",
+                    "marginTopNum":"margin-top--22px",
+                    "numberPost": "1.306.432.0065",
+                    "picture": "/img/any-foto.png",
+				    "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+
+                </div>
+                <div class="card__item-about">
+                    @@include('./partials/mini-card/_mini-card-about-picture.html',
+					{"nameCard": "JANE DORI",
+                    "marginBottom": "margin-bottom--zero",
+                    "marginTop":"margin-top--8px",
+                    "marginTopNum":"margin-top--22px",
+                    "underName": "EXECUTIVE ADMINISTRTOR",
+                    "numberPost": "1.376.832.0065",
+                    "picture": "/img/any-foto.png",
+				    "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+
+                </div>
+                <div class="card__item-about">
+                    @@include('./partials/mini-card/_mini-card-about-picture.html',
+					{"nameCard": "JANE DOSS",
+                    "underName": "REALITOR",
+                    "marginBottom": "margin-bottom--zero",
+                    "marginTop":"margin-top--8px",
+                    "marginTopNum":"margin-top--22px",
+                    "numberPost": "1.376.439.8455",
+                    "picture": "/img/any-foto.png",
+				    "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+                </div>
+            </div>
+            <div class="border"></div>
         </main>
     </div>
+    <footer>       
+		<div class="footer">            
+			<p class="text--font12small">All Content Copyright 2012 - Blitz. All Rights Reserved</p>
+			<p class="text--font12small">Site Developed by Best PSD Freebies</p>
+		</div>
+	</footer>

@@ -49,12 +49,21 @@
   .accordion-input:checked ~ .accordion-text{
     display: block;
     position: absolute;
-    top: 88px;
+    
 
   }
   .accordion-text{
     @include mainFont();
   }
   .picture{
-    border:3px solid  lightgrey;
+    &--withBorder{
+      border:3px solid  lightgrey;
+    }
+    
+  }
+  .extra-text-down{
+    margin-top: 30px;
+  }
+  .wrapper-about-text{
+    padding: 0 15px;
   }
