@@ -2,14 +2,19 @@
 // @import "./variables.scss";
 
 
-body  {
+body * {
   outline: 1px solid lightgrey;
-  
+
 }
 
 .container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0 auto;
   max-width: 940px;
+
+
   
 }
 .cap{
@@ -45,6 +50,9 @@ body  {
   text-decoration: none;
 }
 
+main{
+  flex-grow: 1;
+}
 
 .text{
   @include mainFont();
