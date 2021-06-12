@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+          crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./main.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,16 +20,111 @@
         integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7dad511364.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container">
+    <div class="wrapper">
         <header class="cap">
             @@include('./header.html')
         </header>
+        <main>
+            <div class="container">
+                <div class="container__left">
+                    <div class="header">
+                        <p class="text--font24">PROJECTS</p>
+                        <p class="text--cursive">Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore
+                            veritatis et quasi architecto beatae
+                            vitae dicta sunt explicabo nemo enim ipsam voluptatem.
+                        </p>
+                        <div class="border"></div>
+                    </div>
+                    <div class="block-column">
+                        <div class="block-column__column">
+                            <div>
+                                @@include('./partials/mini-card/_mini-card-about-picture.html',
+                                {"nameCard": "VALLARTA BROCHURE",
+                                "underName": "PRINT",
+                                "marginBottom": "margin-bottom--zero",
+                                "marginTop":"margin-top--8px",
+                                "marginTopNum":"",
+                                "numberPost": "",
+                                "picture": "/img/project1.png",
+                                "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+                            </div>
+                            <div>
+                                @@include('./partials/mini-card/_mini-card-about-picture.html',
+                                {"nameCard": "JESUS WALLPAPER",
+                                "underName": "ART",
+                                "marginBottom": "margin-bottom--zero",
+                                "marginTop":"margin-top--8px",
+                                "marginTopNum":"",
+                                "numberPost": "",
+                                "picture": "/img/project2.png",
+                                "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+                            </div>
+
+                        </div>
+                        <div class="block-column__column">
+                            <div>
+                                @@include('./partials/mini-card/_mini-card-about-picture.html',
+                                {"nameCard": "WEDDING CARD",
+                                "underName": "PRINT",
+                                "marginBottom": "margin-bottom--zero",
+                                "marginTop":"margin-top--8px",
+                                "marginTopNum":"",
+                                "numberPost": "",
+                                "picture": "/img/project3.png",
+                                "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+                            </div>
+                            <div>
+                                @@include('./partials/mini-card/_mini-card-about-picture.html',
+                                {"nameCard": "SMOKE TUTORIAL",
+                                "underName": "PHOTOSHOP",
+                                "marginBottom": "margin-bottom--zero",
+                                "marginTop":"margin-top--8px",
+                                "marginTopNum":"",
+                                "numberPost": "",
+                                "picture": "/img/project4.png",
+                                "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+                            </div>
+                        </div>
+                        <div class="block-column__column">
+                            <div>
+                                @@include('./partials/mini-card/_mini-card-about-picture.html',
+                                {"nameCard": "WEDDING CARD",
+                                "underName": "PRINT",
+                                "marginBottom": "margin-bottom--zero",
+                                "marginTop":"margin-top--8px",
+                                "marginTopNum":"",
+                                "numberPost": "",
+                                "picture": "/img/project5.png",
+                                "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+                            </div>
+                            <div>
+                                @@include('./partials/mini-card/_mini-card-about-picture.html',
+                                {"nameCard": "SMOKE TUTORIAL",
+                                "underName": "PHOTOSHOP",
+                                "marginBottom": "margin-bottom--zero",
+                                "marginTop":"margin-top--8px",
+                                "marginTopNum":"",
+                                "numberPost": "",
+                                "picture": "/img/project6.png",
+                                "textCard": "Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam"})	
+                            </div> 
+                        </div>    
+                    </div>
+                </div>
+                <div class="container__right">
+                    asaid
+                </div>
+
+            </div>
+
+        </main>
     </div>
-	<footer>
-		<div class="footer">
-			<p class="text--font12small">All Content Copyright 2012 - Blitz. All Rights Reserved</p>
-			<p class="text--font12small">Site Developed by Best PSD Freebies</p>
-		</div>
-	</footer>
+    <footer>
+        <div class="footer">
+            <p class="text--font12small">All Content Copyright 2012 - Blitz. All Rights Reserved</p>
+            <p class="text--font12small">Site Developed by Best PSD Freebies</p>
+        </div>
+    </footer>
 </body>

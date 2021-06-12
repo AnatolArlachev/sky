@@ -1,5 +1,5 @@
 @import "./partials/mini-card/mini-card.scss";
-// @import "./variables.scss";
+@import "./fonts.scss";
 
 
 body * {
@@ -7,7 +7,7 @@ body * {
 
 }
 
-.container{
+.wrapper{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -53,55 +53,25 @@ body * {
 main{
   flex-grow: 1;
 }
-
-.text{
-  @include mainFont();
-  &--font12smallMain{
-    @include mainFont();
-    font-family: "Bebas";
-  }
-  &--font12small{
-    @include mainFont( $color: #9e9e9e);
-    font-family: "Bebas";
-  }
-  &--font12color94{
-    @include mainFont( $color: #949393);
-  }
-  &--cursive{
-    @include mainFont( $color: #9e9e9e, $stFont:italic);
-    font-family: "Bebas";
-  }
-  &--colora5{
-    @include mainFont($color:#a5a5a5);
-    // margin-bottom: 10px;
-  }
-
-  &--font20{
-    @include mainFont($fz: 20px);
-    // margin-top: 0;
-  }
-  &--font16{
-    @include mainFont($fz: 16px);
-    &--color51{
-      color: #515151;
-    }
-  }
-  &--font18{
-    @include mainFont($fz: 18px);
-    &--pad25{
-      line-height: 30px;
-      padding: 0 25px;
-    }
-
-  }
-  &--font14{
-    @include mainFont($fz: 14px);
-  }
-  &--font24{
-    @include mainFont($fz: 24px);
-  }
+.splide{
+  &__arrow{
+    display: none;
 }
-
+&__pagination{
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  left: initial;
+  transform: initial;
+  padding-right: 30px;
+  &__page{
+    border-radius:initial;
+    width: 23px;
+    height: 6px;
+    margin-right: 8px;
+  }
+ }
+}
 .description-slider{
   padding: 4px 1rem;
   background-color: rgba(231, 231, 231, 0.308);
@@ -138,6 +108,8 @@ main{
 
 }
 .border{
+  margin: 0 auto;
+  max-width:940px ;
   margin-top:17px ;
   height: 7px;
   background-image: url(/img/background.png);
@@ -145,7 +117,33 @@ main{
     margin:47px 0 60px ;
   }
 }
-.aboutUS{
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  &__left{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  &__right{
+    flex-basis: 23%;
+  }
+}
+.block-column{
+  display: flex;
+  justify-content: space-between;
+  &__column{
+    
+    flex-basis: 31%;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.header{
   padding-top: 10px; 
 }
 .margin-top--8px{
