@@ -42,7 +42,17 @@ body * {
     &:last-of-type{
       padding-right: 0;
     }
-
+  }
+  &__item{
+    padding:0 12px;
+    border-right: 2px solid $main-color;
+    &:first-of-type{
+      padding-left: 0;
+    }
+  }
+  &-count{
+    list-style: none;
+    padding-left: 0;
   }
   
 }
@@ -57,20 +67,20 @@ main{
   &__arrow{
     display: none;
 }
-&__pagination{
-  width: fit-content;
-  position: absolute;
-  right: 0;
-  left: initial;
-  transform: initial;
-  padding-right: 30px;
-  &__page{
-    border-radius:initial;
-    width: 23px;
-    height: 6px;
-    margin-right: 8px;
+  &__pagination{
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    left: initial;
+    transform: initial;
+    padding-right: 30px;
+    &__page{
+      border-radius:initial;
+      width: 23px;
+      height: 6px;
+      margin-right: 8px;
+    }
   }
- }
 }
 .description-slider{
   padding: 4px 1rem;
@@ -132,6 +142,7 @@ main{
   }
 }
 .block-column{
+  padding-top: 26px;
   display: flex;
   justify-content: space-between;
   &__column{
@@ -144,10 +155,13 @@ main{
 }
 
 .header{
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 .margin-top--8px{
   margin-top: 8px;
+}
+.margin-top--70px{
+  margin-top: 70px;
 }
 .margin-bottom--zero{
   margin-bottom: 0px;
