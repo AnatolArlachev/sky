@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="./main.scss">
-	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-	<title>Blitz</title>
-	<script src="./js/main.js" defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"
-		integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/7dad511364.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./main.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Blitz</title>
+    <script src="./js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"
+        integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7dad511364.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -34,47 +34,92 @@
                         </p>
                         <div class="border"></div>
                     </div>
-
+                    <div class="wrappers-card">
+                        <div class="wrappers-card__big-card">
+                            @@include('./partials/blog-card/_blog-card.html',
+                            {'textHeader': 'TOP 10 WEB DESIGN BLOGS',
+                             'blogImage' : '/img/blog1.png',
+                             'dataONE' : 'DATE',
+                             'dataOneDate' : 'April 15 2012',
+                             'dataTwo' : 'TAGS',
+                             'dataThree' : 'COMMENTS',
+                             'dataThreeCounter' : '4',
+                             'textBlogUp' : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eaque assumenda, expedita ducimus soluta dignissimos minus eveniet at cupiditate, tempore, iusto rerum? Dolor, quis sequi? Minima exercitationem in minus eligendi!',
+                             'textBlogDown' : 'Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.'
+                            })                            
+                        </div>
+                        <div class="wrappers-card__big-card">
+                            @@include('./partials/blog-card/_blog-card.html',
+                            {'textHeader': 'TOP 10 WEB DESIGN BLOGS',
+                             'blogImage' : '/img/blog2.png',
+                             'dataONE' : 'DATE',
+                             'dataOneDate' : 'April 15 2011',
+                             'dataTwo' : 'TAGS',
+                             'dataThree' : 'COMMENTS',
+                             'dataThreeCounter' : '7',
+                             'textBlogUp' : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eaque assumenda, expedita ducimus soluta dignissimos minus eveniet at cupiditate, tempore, iusto rerum? Dolor, quis sequi? Minima exercitationem in minus eligendi!',
+                             'textBlogDown' : 'Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.'
+                            })                            
+                        </div>
+                        <div class="wrappers-card__big-card">
+                            @@include('./partials/blog-card/_blog-card.html',
+                            {'textHeader': 'TOP 10 WEB DESIGN BLOGS',
+                             'blogImage' : '/img/main.png',
+                             'dataONE' : 'DATE',
+                             'dataOneDate' : 'April 15 2019',
+                             'dataTwo' : 'TAGS',
+                             'dataThree' : 'COMMENTS',
+                             'dataThreeCounter' : '46',
+                             'textBlogUp' : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eaque assumenda, expedita ducimus soluta dignissimos minus eveniet at cupiditate, tempore, iusto rerum? Dolor, quis sequi? Minima exercitationem in minus eligendi!',
+                             'textBlogDown' : 'Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus.Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.'
+                            })                            
+                        </div>
+                    </div>
                 </div>
                 <div class="container__right">
                     <div class="header margin-top--70px">
                         <p class="text">ABOUT BLITZ</p>
-                        <div class="border">                           
+                        <div class="border">
                         </div>
                     </div>
                     <div>
                         <p class="text--font12smallMain">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                           Quisquam ducimus voluptatum necessitatibus voluptatem doloribus atque.
-                           Laudantium, sequi similique quam recusandae neque rem adipisci iste
-                           voluptatem eum hic ab magnam. Placeat?
+                            Quisquam ducimus voluptatum necessitatibus voluptatem doloribus atque.
+                            Laudantium, sequi similique quam recusandae neque rem adipisci iste
+                            voluptatem eum hic ab magnam. Placeat?
                         </p>
                         <p class="text">
                             CATEGORIES
                         </p>
-                        <div class="border">                           
-                    </div>
-                    <div>
-                        <ul class="menu-count text--font12smallMain">
-                            <li>Video(3)</li>
-                            <li>Sports(5)</li>
-                            <li>Media(2)</li>
-                            <li>Entertaiment(7)</li>
-                            <li>Life(4)</li>
-                            <li>Super Cool Stuff(8)</li>
-                        </ul>
-                        <p class="text">TWITTER WIDGET</p>
-                        <div class="border"></div>
-                    </div>
-                    <div>
-                        <p class="text--font12smallMain"><a href="#" class="link text--font12small"><span class="text--font12smallMain">@</span>pixelmater</a>What an awesome design with great functionally</p>
-                        <p>about 1 hours ago</p>
-                        <p class="text--font12smallMain"><a href="#" class="link text--font12small"><span class="text--font12smallMain">@</span>designdude</a>What an awesome design with great functionally</p>
-                        <p>about 2 hours ago</p>
-                        <p class="text--font12smallMain">Follow <a href="#" class="link text--font12small"><span class="text--font12smallMain">@</span>bestpsdfreebies</a></p>
+                        <div class="border">
+                        </div>
+                        <div>
+                            <ul class="menu-count text--font12smallMain">
+                                <li>Video(3)</li>
+                                <li>Sports(5)</li>
+                                <li>Media(2)</li>
+                                <li>Entertaiment(7)</li>
+                                <li>Life(4)</li>
+                                <li>Super Cool Stuff(8)</li>
+                            </ul>
+                            <p class="text">TWITTER WIDGET</p>
+                            <div class="border"></div>
+                        </div>
+                        <div>
+                            <p class="text--font12smallMain"><a href="#" class="link text--font12small"><span
+                                        class="text--font12smallMain">@</span>pixelmater</a>What an awesome design with
+                                great functionally</p>
+                            <p>about 1 hours ago</p>
+                            <p class="text--font12smallMain"><a href="#" class="link text--font12small"><span
+                                        class="text--font12smallMain">@</span>designdude</a>What an awesome design with
+                                great functionally</p>
+                            <p>about 2 hours ago</p>
+                            <p class="text--font12smallMain">Follow <a href="#" class="link text--font12small"><span
+                                        class="text--font12smallMain">@</span>bestpsdfreebies</a></p>
 
+                        </div>
                     </div>
                 </div>
-            </div>
         </main>
     </div>
     <footer>
