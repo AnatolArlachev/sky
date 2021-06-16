@@ -195,6 +195,43 @@ footer{
   justify-content: space-between;
 }
 
+.form-senting{
+  &__form{
+    display: flex;
+    flex-direction: column;
+  }
+  &__field{
+    width: 30%;
+    background-color: rgba(245, 238, 238, 0.486);
+    padding: 10px 15px;
+    margin: 10px 0;
+    border:1px solid rgba(228, 222, 222, 0.493);
+    border-radius: 5px;
+    opacity: 40%;
+  }
+  &__submit{
+    border: none;
+    background-color: white;
+    width: fit-content;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 30px;
+    &:before{
+      content: "\f101";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 12px;
+      color:  $main-color;
+      padding: 0 5px;
+    }
+    &:hover{
+      background-color: rgba(228, 222, 222, 0.493);
+    }
+  }
+}
+.textarea{
+  width: 75%;
+}
 // .accordion {
 //   &__status {
 //     display: none;
