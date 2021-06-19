@@ -29,10 +29,7 @@ body * {
   padding-top: 3px;
   color: $main-color;
 }
-// .nav{
 
-  
-// }
 .menu{
   list-style: none;
   display: flex;
@@ -236,33 +233,4 @@ img{
   width: 100%;
 }
 
-// .just{
-//   width: 100%;
-// }
-// .accordion {
-//   &__status {
-//     display: none;
-//   }
-//   &__action--open,
-//   &__action--close {
-//     display: block;
-//   }
-//   &__content {
-//     max-height: 0;
-//     overflow: hidden;
-//     transition: max-height .5s linear;
-//   }
-// }
-
-// .accordion__status.close:checked ~ .accordion__action--close {
-//   display: none;
-// }
-
-// .accordion__status.open:checked ~ .accordion__action--open {
-//   display: none;
-// }
-
-// .accordion__status.open:checked ~ .accordion__content {
-//   max-height: 80vh;
-// }
 

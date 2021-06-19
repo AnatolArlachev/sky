@@ -29,29 +29,29 @@
   .fas{
     @include iconFont();
   }
-.accordion{
-  position: relative;
-}
+// .accordion{
+//   position: relative;
+// }
 
 
-.accordion-input{
-    position: absolute;
-    width: 0;
-    height: 0;
+// .accordion-input{
+//     position: absolute;
+//     width: 0;
+//     height: 0;
     
-  }
-  .accordion-text{
-    display: none;
-    padding: 5px;
+//   }
+  // .accordion-text{
+  //   display: none;
+  //   padding: 5px;
 
   
-  }
-  .accordion-input:checked ~ .accordion-text{
-    display: block;
-    position: absolute;
+  // }
+  // .accordion-input:checked ~ .accordion-text{
+  //   display: block;
+  //   position: absolute;
     
 
-  }
+  // }
   .accordion-text{
     @include mainFont();
   }
@@ -66,4 +66,20 @@
   }
   .wrapper-about-text{
     padding: 0 15px;
+  }
+
+
+  .accordion {
+    input {
+      display: none;
+    }
+  }
+  .accordion__input--close:checked ~ .accordion__content {
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .accordion__input--open:checked ~ .accordion__opener--open,
+  .accordion__input--close:checked ~ .accordion__opener--close {
+  display: none;
   }
