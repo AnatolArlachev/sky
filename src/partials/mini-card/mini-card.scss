@@ -29,32 +29,33 @@
   .fas{
     @include iconFont();
   }
-// .accordion{
-//   position: relative;
-// }
-
-
-// .accordion-input{
-//     position: absolute;
-//     width: 0;
-//     height: 0;
+.accordion{
+  position: relative;
+  input {
+    display: none;
+  }
+  &__input--close:checked ~ .accordion__content {
+    height: 0;
+    overflow: hidden;
     
-//   }
-  // .accordion-text{
-  //   display: none;
-  //   padding: 5px;
+  }
+}
+
+
+.accordion__input--open:checked ~ .accordion__visible--open,
+.accordion__input--close:checked ~ .accordion__visible--close {
+display: none;
+}
+.accordion__input--open:checked ~ .accordion__content{
+  position: absolute;
+}
+
+
+
 
   
-  // }
-  // .accordion-input:checked ~ .accordion-text{
-  //   display: block;
-  //   position: absolute;
-    
 
-  // }
-  .accordion-text{
-    @include mainFont();
-  }
+ 
   .picture{
     &--withBorder{
       border:3px solid  lightgrey;
@@ -69,17 +70,3 @@
   }
 
 
-  .accordion {
-    input {
-      display: none;
-    }
-  }
-  .accordion__input--close:checked ~ .accordion__content {
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .accordion__input--open:checked ~ .accordion__opener--open,
-  .accordion__input--close:checked ~ .accordion__opener--close {
-  display: none;
-  }

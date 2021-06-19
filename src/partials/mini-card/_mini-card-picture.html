@@ -3,18 +3,25 @@
     <p class="text--font20">
         @@nameCard
     </p>
-    
-    <p class="text padding5">
-        @@textCard
-    </p>
-    <input type="checkbox" class="accordion-input" id="@@numberAcc" name="@@numberAcc">
-    <label for="@@numberAcc" class="accordion-title text--font14">
-        VIEW PROJECTS
-    </label>
-    
-    <div class="accordion-text text">
-        <p>
-            @@extraText
+    <div class="accordion">
+        <p class="text--font12smallMain padding5">
+            @@textCard
         </p>
+        <input type="radio" id="@@idAccOpen" class="accordion__input--open" name="@@numberAcc" >
+        <label for="@@idAccOpen" class="accordion-title accordion__visible--open text--font14">VIEW PROJECTS</label>
+        <input type="radio" id="@@idAccClose" class="accordion__input--close" name="@@numberAcc" checked>
+        <label for="@@idAccClose" class="accordion-title accordion__visible--close text--font14">HIDE ALL</label>
+    
+        <!-- <input type="checkbox" class="accordion-input" id="@@numberAcc" name="@@numberAcc">
+        <label for="@@numberAcc" class="accordion-title text--font14">
+            VIEW PROJECTS
+        </label> -->
+        
+        <div class="accordion__content padding5 text--font12smallMain">
+            <p>
+                @@extraText
+            </p>
+        </div>
     </div>
+
 </div>
