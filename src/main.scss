@@ -29,14 +29,24 @@ body * {
   padding-top: 3px;
   color: $main-color;
 }
+.nav{
+  display: flex;
+}
 
 .menu{
   list-style: none;
   display: flex;
   padding-left: 0;
   margin-top: 38px;
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
   &__link{
     padding: 0 35px;
+    @media (max-width: 680px) {
+      padding: 0 10px;
+      
+    }
     &:last-of-type{
       padding-right: 0;
     }
@@ -97,6 +107,10 @@ main{
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
+  @media (max-width: 728px) {
+    flex-direction: column;
+    
+  }
   &__item{
     display: flex;
     flex-direction: column;
@@ -116,10 +130,18 @@ main{
 .card{
   display: flex;
   justify-content: space-between;
+  @media (max-width: 680px) {
+    flex-wrap: wrap;
+    
+  }
   &__item{
     display: flex;
     flex-direction: column;
     flex-basis: 23%;
+    @media (max-width: 680px) {
+      flex-basis: 46%;
+      
+    }
   }
   &__item-about{
     flex-basis: 31%;

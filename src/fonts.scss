@@ -17,7 +17,7 @@
     }
     &--colora5{
       @include mainFont($color:#a5a5a5);
-      // margin-bottom: 10px;
+      white-space: nowrap;
     }
   
     &--font20{

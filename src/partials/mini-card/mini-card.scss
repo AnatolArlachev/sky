@@ -5,8 +5,7 @@
 }
 
   .padding5{
-    // display: flex;
-    max-height: 100px;
+
     padding: 5px;  
   }
   
@@ -48,6 +47,7 @@ display: none;
 }
 .accordion__input--open:checked ~ .accordion__content{
   position: absolute;
+  top: 100%;
 }
 
 
@@ -59,6 +59,7 @@ display: none;
   .picture{
     &--withBorder{
       border:3px solid  lightgrey;
+      box-sizing: border-box;
     }
     
   }
@@ -69,4 +70,6 @@ display: none;
     padding: 0 15px;
   }
 
+  // .change-text{
 
+  // }
